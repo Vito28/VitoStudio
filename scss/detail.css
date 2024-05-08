@@ -312,7 +312,7 @@ div.detail section#data {
   height: auto;
 }
 div.detail section#data img#logo {
-  width: 40%;
+  width: 30%;
   min-width: 140px;
 }
 div.detail section#data .top {
@@ -343,17 +343,11 @@ div.detail section#data article img {
 div.detail section#data article p {
   text-decoration: none;
 }
-div.detail section#data article p a {
-  text-decoration: none;
-}
 div.detail section#data article p a#number {
   letter-spacing: 3px;
 }
 div.detail section#data article p#footer {
   margin-top: 5%;
-}
-div.detail section#data article a:hover {
-  mix-blend-mode: difference;
 }
 div.detail section#data article section.contact {
   width: auto;
@@ -372,4 +366,13 @@ div.detail section#gbr {
 div.detail section#gbr img {
   width: 100%;
   fill-opacity: 2px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  mix-blend-mode: screen;
+  color: rgb(125, 243, 243);
 }/*# sourceMappingURL=detail.css.map */
