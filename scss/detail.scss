@@ -1,5 +1,5 @@
 @import './Data/var';
-
+@import './Data/navbar';
 
 
 
@@ -22,6 +22,7 @@ div.detail {
     display: flex;
     background: linear-gradient(to left, $home_light_clr 10%, rgb(0, 149, 255));
     color: $home_light_txt;
+    margin-top: 8rem;
 
     section {
         width: 50%;

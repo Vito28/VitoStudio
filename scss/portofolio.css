@@ -21,6 +21,8 @@ nav {
   color: rgb(125, 243, 243);
   background-color: #282a35;
   border-bottom: 1px solid rgb(84, 81, 81);
+  position: fixed;
+  top: 0;
 }
 nav .brand {
   width: 10%;
