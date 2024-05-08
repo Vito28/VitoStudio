@@ -30,8 +30,14 @@ section {
                 span {
                     color: #928e8e;
                 }
+            }   
+        }
+
+        .portofolio-acces {
+            display: flex;
+            a {
+               text-decoration: none; 
             }
-            
         }
     }
 }
