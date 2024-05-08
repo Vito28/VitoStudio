@@ -372,6 +372,11 @@ div.abotus section#gbr {
 }
 div.abotus section#gbr img {
   width: auto;
-  height: 100%;
   fill-opacity: 2px;
+}
+
+@media screen and (max-width: 768px) {
+  div.abotus {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=aboutUs.css.map */
