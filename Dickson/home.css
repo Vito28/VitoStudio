@@ -7,7 +7,6 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  overflow: hidden;
 }
 
 div.home {
@@ -114,6 +113,7 @@ div.home section#left article .wrapper li .anim-typewriter {
 }
 div.home section#right {
   order: 1;
+  overflow: hidden;
 }
 div.home section#right img {
   height: 100%;
