@@ -20,7 +20,6 @@ body {
 div.abotus {
     display: flex;
     background: linear-gradient(to right, $home_light_clr 50%, pink 100%),linear-gradient(to right, $home_light_clr 50%, pink 100%);
-
     color: $home_light_txt;
     padding:15px;
     
@@ -45,7 +44,6 @@ div.abotus {
             }
 
             .top{
-                
                 font-size: 140%;
                 h1{ padding-left: 10%;
                     // margin-top: -10%;
