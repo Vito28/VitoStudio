@@ -318,7 +318,7 @@ div.home section#left img {
 div.home section#left article {
   padding: 0% 10%;
   margin-top: -5%;
-  font-size: 200%;
+  font-size: 210%;
 }
 div.home section#left article h1,
 div.home section#left article h5,
@@ -352,7 +352,7 @@ div.home section#left article .wrapper .scroll {
 }
 @keyframes slide {
   100% {
-    top: -270px;
+    top: -190px;
   }
 }
 div.home section#left article .wrapper span {
