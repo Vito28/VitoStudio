@@ -308,9 +308,34 @@ section .container .portofolio-text * {
 section .container .portofolio-text h2 span {
   color: #928e8e;
 }
-section .container .portofolio-acces {
-  display: flex;
-}
 section .container .portofolio-acces a {
   text-decoration: none;
+}
+section .container .portofolio-acces a .portofolio-image {
+  display: flex;
+  flex-direction: center;
+  background-color: rgba(16, 225, 30, 0.831);
+  border-radius: 10px;
+  color: #fff;
+  width: 100px;
+}
+section .container .portofolio-acces a .portofolio-image span {
+  font-size: 0.8rem;
+}
+section .container .portofolio-acces a .portofolio-image img {
+  width: 1rem;
+  height: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  section {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 10rem 6rem 3rem 6rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  section {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 10rem 6rem 3rem 6rem;
+  }
 }/*# sourceMappingURL=portofolio.css.map */
