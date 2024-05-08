@@ -24,7 +24,8 @@ nav {
     align-items: center;
     width: 100%;
     padding: 10px 0;
-    color: rgb(125, 243, 243);
+    // color: rgb(125, 243, 243);
+    // backdrop-filter: blur(5px);
     background-color: #282a35;
     border-bottom: 1px solid rgb(84, 81, 81);
     position: fixed;
@@ -142,11 +143,12 @@ nav {
                     top: 5rem;
                     width: 850px;
                     li {
-                        background-color: #4ef1e1;
+                        // background-color: #4ef1e1;
+                        backdrop-filter: blur(5px);
                         padding: 1rem 1.8rem;
                         border-radius: 100px;
                         a {
-                            color: #000;
+                            // color: #000;
                         }
                         
                     }
