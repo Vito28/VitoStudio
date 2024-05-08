@@ -9,6 +9,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
+  background: url("../../Image/Logo/background_in_space.gif");
 }
 
 nav {
@@ -16,9 +17,10 @@ nav {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 20px 0;
+  padding: 10px 0;
   color: rgb(125, 243, 243);
-  background-color: #f0f0f0;
+  background-color: #282a35;
+  border-bottom: 1px solid rgb(84, 81, 81);
 }
 nav .brand {
   width: 10%;
@@ -34,11 +36,11 @@ nav .wrapper-responsive {
   width: 90%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 nav .wrapper-responsive .menu-list {
-  width: 600px;
+  width: 850px;
 }
 nav .wrapper-responsive .menu-list ul {
   display: flex;
@@ -51,7 +53,7 @@ nav .wrapper-responsive .menu-list ul {
   height: 40px;
 }
 nav .wrapper-responsive .menu-list ul li a {
-  color: #000;
+  color: #fff;
   text-decoration: none;
   font-size: 1rem;
 }
@@ -64,14 +66,15 @@ nav .wrapper-responsive .form_auth {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 20%;
+  width: 200px;
+  margin-left: 3rem;
 }
 nav .wrapper-responsive .form_auth button {
   background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
   border-radius: 10px;
   border-style: none;
   box-sizing: border-box;
-  color: white;
+  color: #212121;
   cursor: pointer;
   font-weight: 500;
   text-align: center;
@@ -103,7 +106,7 @@ nav .wrapper-responsive .form_auth button::after {
   z-index: -1;
   content: "";
   position: absolute;
-  background: rgb(38, 41, 48);
+  background: #f0f0f0;
   width: 100%;
   height: 100%;
   left: 0;
@@ -113,6 +116,11 @@ nav .wrapper-responsive .form_auth button::after {
 }
 nav .wrapper-responsive .form_auth button:hover {
   color: rgb(71, 79, 79);
+}
+nav .wrapper-responsive .form_auth button:hover::after {
+  border: 2px solid lightgreen;
+  background-image: linear-gradient(92.88deg, #45b55e 9.16%, #56cc43 43.89%, #67d73f 64.72%);
+  transition-duration: 0.1s;
 }
 @keyframes glowing-button {
   0% {
@@ -181,7 +189,29 @@ nav .menu-toggle input:checked ~ span:nth-child(3) {
   }
   nav .wrapper-responsive .menu-list ul {
     top: 5rem;
-    width: 600px;
+    width: 850px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  nav .wrapper-responsive .menu-list ul {
+    position: relative;
+    width: 700px;
+  }
+  nav .wrapper-responsive .menu-list .null {
+    display: none;
+  }
+  nav .wrapper-responsive .auth-form {
+    margin: 0;
+    flex-direction: center;
+  }
+}
+@media screen and (max-width: 900px) {
+  nav .wrapper-responsive .menu-list ul {
+    position: relative;
+    width: 650px;
+  }
+  nav .wrapper-responsive .menu-list .null {
+    display: none;
   }
 }
 @media screen and (max-width: 768px) {

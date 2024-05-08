@@ -14,6 +14,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
     // background-color: #000;
+    background: url('../../Image/Logo/background_in_space.gif');
 }
 
 nav {
@@ -22,9 +23,10 @@ nav {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 20px 0;
+    padding: 10px 0;
     color: rgb(125, 243, 243);
-    background-color: #f0f0f0;
+    background-color: #282a35;
+    border-bottom: 1px solid rgb(84, 81, 81);
     
 
     .brand {
@@ -36,9 +38,9 @@ nav {
     }
     .wrapper-responsive {
         width: 90%;
-        @include flex-custom(row, space-around, center);
+        @include flex-custom(row, space-between, center);
         .menu-list {
-            width: 600px;
+            width: 850px;
             ul {
                 @include flex-custom(row, space-between, center);
                 list-style: none;
@@ -48,7 +50,7 @@ nav {
        
                 li {
                     a {
-                        color: #000;
+                        color: #fff;
                         text-decoration: none;
                         font-size: 1rem;
                     }
@@ -63,12 +65,12 @@ nav {
 
         .form_auth {
             @include flex-custom(row, space-between, center);
-            width: 20%;
+            width: 200px;
             @include button();
             button {
                 padding: 8px 8px 4px 13px;
             }
-            // margin-right: 3rem;
+            margin-left: 3rem;
         }
         
     }
@@ -135,30 +137,51 @@ nav {
             .menu-list {
                 ul {
                     top: 5rem;
-                    width: 600px;
+                    width: 850px;
                 }  
             }
         }
     }
 }
-
-// @media screen and (max-width : 900px) {
-//     nav {
-//         .wrapper-responsive {
-//             .menu-list {
-//                 ul {
-//                     position: relative;
-//                     width: 450px;
-//                 }
+@media screen and (max-width : 1024px) {
+    nav {
+        .wrapper-responsive {
+            .menu-list {
+                ul {
+                    position: relative;
+                    width: 700px;
+                }
         
-//                 .null {
-//                     display: none;
-//                 }
-//             }
+                .null {
+                    display: none;
+                }
+            }
+
+            .auth-form {
+                margin: 0;
+                flex-direction: center;
+            }
             
-//         }
-//     }
-// }
+        }
+    }
+}
+@media screen and (max-width : 900px) {
+    nav {
+        .wrapper-responsive {
+            .menu-list {
+                ul {
+                    position: relative;
+                    width: 650px;
+                }
+        
+                .null {
+                    display: none;
+                }
+            }
+            
+        }
+    }
+}
 @media screen and (max-width : 768px) {
     nav {
         .wrapper-responsive {
