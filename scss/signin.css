@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background: url("/Image/background_in_space.gif");
+  background: url("../Image/Logo/background_in_space.gif");
   font-family: "Nunito Sans";
 }
 
