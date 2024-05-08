@@ -307,4 +307,10 @@ section .container .portofolio-text * {
 }
 section .container .portofolio-text h2 span {
   color: #928e8e;
+}
+section .container .portofolio-acces {
+  display: flex;
+}
+section .container .portofolio-acces a {
+  text-decoration: none;
 }/*# sourceMappingURL=portofolio.css.map */
