@@ -11,7 +11,7 @@ body {
 
 div.home {
   display: flex;
-  background: linear-gradient(to left, rgb(36, 36, 36) 100%, white);
+  background: linear-gradient(to left, rgb(20, 20, 20) 50%, rgb(38, 41, 48));
   color: white;
 }
 div.home section {
@@ -68,27 +68,24 @@ div.home section#left article .wrapper .scroll {
 }
 @keyframes slide {
   100% {
-    top: -360px;
+    top: -270px;
   }
 }
-div.home section#left article .wrapper li {
-  list-style: none;
-}
-div.home section#left article .wrapper li span {
+div.home section#left article .wrapper span {
   display: inline-flex;
   position: relative;
 }
-div.home section#left article .wrapper li .colorblue {
+div.home section#left article .wrapper .colorblue {
   color: rgb(0, 140, 255);
 }
-div.home section#left article .wrapper li .line {
+div.home section#left article .wrapper .line {
   position: relative;
   font-size: 100%;
   white-space: nowrap;
   overflow: hidden;
   transform: translateY(-40%);
 }
-div.home section#left article .wrapper li .anim-typewriter {
+div.home section#left article .wrapper .anim-typewriter {
   border-right: 2px solid rgb(0, 0, 0);
   animation: typewriter 3s steps(12) infinite both, blinkTextCursor 0.5s steps(40) infinite normal;
 }
@@ -117,16 +114,6 @@ div.home section#right {
 }
 div.home section#right img {
   height: 100%;
-}
-
-.button:hover::after {
-  border: 2px solid lightgreen;
-  background-image: linear-gradient(92.88deg, #45b55e 9.16%, #56cc43 43.89%, #67d73f 64.72%);
-  transition-duration: 0.1s;
-}
-
-.button:hover {
-  color: rgb(71, 79, 79);
 }
 
 .button {
@@ -188,4 +175,14 @@ div.home section#right img {
   top: 0;
   border-radius: 10px;
   border: 2px solid white;
+}
+
+.button:hover::after {
+  border: 2px solid lightgreen;
+  background-image: linear-gradient(92.88deg, #45b55e 9.16%, #56cc43 43.89%, #67d73f 64.72%);
+  transition-duration: 0.1s;
+}
+
+.button:hover {
+  color: rgb(71, 79, 79);
 }/*# sourceMappingURL=home.css.map */

@@ -45,7 +45,7 @@ div.detail {
             img#logo {
                 width: 40%;
                 min-width: 140px;
-                // margin-top: -5%;
+                
             }
 
             .top{
@@ -74,6 +74,8 @@ div.detail {
                     border-radius: $br;
                     // border: 0.1px solid white;
                     
+                    
+                    
                 }
                 p{
                     text-decoration: none;
@@ -81,7 +83,7 @@ div.detail {
                     a{  
                         margin-left: 24px;
                         text-decoration: none;
-                        
+                        // position:relative;
                         
                     }
                     a#number{

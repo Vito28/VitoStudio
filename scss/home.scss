@@ -23,7 +23,7 @@ body{
 }
 div.home {
     display: flex;
-    background:linear-gradient(to left,rgb(36, 36, 36) 100%,white);
+    background:linear-gradient(to left,rgb(20, 20, 20) 50%,$home_light_clr);
     color: $home_light_txt;
     section {
         width: 50%;
@@ -82,17 +82,16 @@ div.home {
                         
                         @keyframes slide {
                             100%{
-                                top:-360px;
+                                top:-270px;
                             }
                         }
                     }
-                    li{ 
+             
                         span{
                             display: inline-flex;
                             position: relative;
                         }
-                        list-style: none;
-                        // width: 100%;
+                
                         .colorblue{
                             color:rgb(0,140,255);
                         }
@@ -134,7 +133,7 @@ div.home {
                                   border-right-color: transparent;
                             }
                         }
-                    };
+                    
                 }
                 
                 
@@ -155,14 +154,7 @@ div.home {
         }
     }
 }
-.button:hover::after{
-    border: 2px solid lightgreen;
-    background-image: linear-gradient(92.88deg, #45b55e 9.16%, #56cc43 43.89%, #67d73f 64.72%);
-    transition-duration: .1s;
-}
-.button:hover{
-    color: $home_dark_txt;
-}
+
 .button {
     font-size: 24px;
     padding: 12px 32px;
@@ -235,4 +227,12 @@ div.home {
     border-radius: $br;
     border: 2px solid $home_dark_clr;
 
+}
+.button:hover::after{
+    border: 2px solid lightgreen;
+    background-image: linear-gradient(92.88deg, #45b55e 9.16%, #56cc43 43.89%, #67d73f 64.72%);
+    transition-duration: .1s;
+}
+.button:hover{
+    color: $home_dark_txt;
 }
