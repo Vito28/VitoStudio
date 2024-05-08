@@ -54,7 +54,7 @@ nav {
     }
     
     .form_auth {
-
+        @include flex-row();
         .button-custom {
             @include button();
             button {
