@@ -1,5 +1,5 @@
 @import './Data/var';
-
+$br:10px;
 $br: 10px;
 
 * {
@@ -16,16 +16,21 @@ body {
     // overflow: hidden;
 }
 
-div.detail {
+div.abotus {
     display: flex;
-    background: linear-gradient(to left, $home_light_clr 10%, rgb(0, 149, 255));
+    background: linear-gradient(to right, $home_light_clr 50%, pink 100%),linear-gradient(to right, $home_light_clr 50%, pink 100%);
+
     color: $home_light_txt;
+    padding:15px;
+    
 
     section {
-        width: 50%;
-        height: 100%;
+        // width: 50%;
+        height: auto;
         border-radius: $br;
+        
         &#data {
+            width: 100%;
             order: 2;
             display: flex;
             flex-direction: column;
@@ -50,6 +55,7 @@ div.detail {
                 margin: 10% 0;
                 padding: 0% 10%;
             }
+            
             article {
                 padding:10%;
                 display: flex;
@@ -57,13 +63,7 @@ div.detail {
                 height: 100%;
                 font-size: 120%;
                 padding-bottom: 0;
-                img{
-                    margin: 0 8px;
-                    background-color: white;
-                    border-radius: $br;
-                    // border: 0.1px solid white;
-
-                }
+                
                 p{
                     text-decoration: none;
                     a{  
@@ -74,32 +74,41 @@ div.detail {
                     a#number{
                         letter-spacing:3px;
                     }
-                }p#footer{
+                }p.title{
                     margin-top: 5%;
                 }
                 a:hover{
                     mix-blend-mode:difference;
                 }
 
-                section.contact {
-                    width: auto;
-                    display: flex;
-
-                    justify-content: left;
-
-                }
+                
                 p { margin: 2.5% 0;
                     font-size: 90%;
                     font-weight: bold;
                     text-wrap: wrap;
                 }
             }
+            div.contact {
+                width: 100%;
+                display: flex;
+                justify-content: left;
+                margin-left: 10%;
+                img{
+                    margin: 0 8px;
+                    background-color: white;
+                    border-radius: $br;
+                    // border: 0.1px solid white;
+                    margin-left: 10%;
+                }
+
+            }
         }
 
         &#gbr {
             order: 1;
             img {
-                width: 100%;
+                width: auto;
+                height: 100%;
                 fill-opacity: 2px;
             }
         }

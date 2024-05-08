@@ -1,14 +1,4 @@
-$home_light_clr: white;
-$home_dark_clr: rgb(38, 41, 48);
-$home_light_txt: rgb(71, 79, 79);
-$home_dark_txt: white;
-
-$home_light_clr:$home_dark_clr;
-$home_light_txt:$home_dark_txt;
-$home_dark_txt:rgb(71, 79, 79);
-$home_dark_clr: white;
-
-
+@import './Data/var';
 
 $br:10px;
 * {
