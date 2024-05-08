@@ -330,9 +330,9 @@ section .container .portofolio-acces a .portofolio-image img {
     margin: 10rem 6rem 3rem 6rem;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 576px) {
   section {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     margin: 10rem 6rem 3rem 6rem;
   }
 }/*# sourceMappingURL=portofolio.css.map */
