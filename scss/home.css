@@ -296,7 +296,7 @@ div.home {
   display: flex;
   background: linear-gradient(to left, rgb(20, 20, 20) 45%, rgba(255, 255, 255, 0));
   color: white;
-  margin-top: 8%;
+  margin-top: 10%;
 }
 div.home section {
   width: 50%;
