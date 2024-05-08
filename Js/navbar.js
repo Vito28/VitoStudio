@@ -5,16 +5,17 @@ const navbar = `
     <div class="wrapper-responsive">
     <div class="menu-list">
         <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Portofolio</a></li>
-            <li><a href="">Contact</a></li>
+        <li><a href="../html/home.html">Home</a></li>
+        <li><a href="../html/aboutUs.html">About Us</a></li>
+        <li><a href="../html/portofolio.html">Portofolio</a></li>
+        <li><a href="../html/contact.html">Contact</a></li>
         </ul>
         <div class="null"></div>
     </div>
     <div class="form_auth">
-        <button type="button" class="signIN">Sign In</button>
-        <button type="button" class="signUP">Sign Up</button>
+    <a href="../html/signin.html"><button type="button" class="signIN">Sign In</button></a>
+    
+    <a href="../html/signup.html"><button type="button" class="signUP">Sign Up</button></a>
     </div>
     </div>
 

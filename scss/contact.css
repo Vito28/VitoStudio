@@ -66,9 +66,11 @@ nav .wrapper-responsive .form_auth {
   justify-content: space-between;
   align-items: center;
   width: 200px;
+}
+nav .wrapper-responsive .form_auth a {
   margin-left: 3rem;
 }
-nav .wrapper-responsive .form_auth button {
+nav .wrapper-responsive .form_auth a button {
   background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
   border-radius: 10px;
   border-style: none;
@@ -86,7 +88,7 @@ nav .wrapper-responsive .form_auth button {
   -webkit-user-select: none;
   touch-action: manipulation;
 }
-nav .wrapper-responsive .form_auth button::before {
+nav .wrapper-responsive .form_auth a button::before {
   content: "";
   background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
   position: absolute;
@@ -101,7 +103,7 @@ nav .wrapper-responsive .form_auth button::before {
   animation: glowing-button 20s linear infinite;
   transition: opacity 0.3s ease-in-out;
 }
-nav .wrapper-responsive .form_auth button::after {
+nav .wrapper-responsive .form_auth a button::after {
   z-index: -1;
   content: "";
   position: absolute;
@@ -113,10 +115,10 @@ nav .wrapper-responsive .form_auth button::after {
   border-radius: 10px;
   border: 2px solid white;
 }
-nav .wrapper-responsive .form_auth button:hover {
+nav .wrapper-responsive .form_auth a button:hover {
   color: rgb(71, 79, 79);
 }
-nav .wrapper-responsive .form_auth button:hover::after {
+nav .wrapper-responsive .form_auth a button:hover::after {
   border: 2px solid lightgreen;
   background-image: linear-gradient(92.88deg, #45b55e 9.16%, #56cc43 43.89%, #67d73f 64.72%);
   transition-duration: 0.1s;
@@ -132,7 +134,7 @@ nav .wrapper-responsive .form_auth button:hover::after {
     background-position: 0 0;
   }
 }
-nav .wrapper-responsive .form_auth button {
+nav .wrapper-responsive .form_auth a button {
   padding: 8px 8px 4px 13px;
 }
 nav .menu-toggle {
@@ -371,4 +373,4 @@ a {
 a:hover {
   mix-blend-mode: screen;
   color: rgb(125, 243, 243);
-}/*# sourceMappingURL=detail.css.map */
+}/*# sourceMappingURL=contact.css.map */

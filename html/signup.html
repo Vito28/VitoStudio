@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Penyedia layanan Website terpercaya dan kemudahan dalam registrasi">
     <title>Layanan Pembuatan Website</title>
     <link rel="icon" href="/Image/Logo/web_design_studio.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="../scss/signup.css">
 </head>
 
 <body>
-    <section id="particles-js"> 
+    <section id="particles-js">
         <header>
             <main>
                 <div class="container-card-signin">
@@ -20,10 +23,11 @@
                         <i class="fa-solid fa-xmark animate__animated animate__fadeInRight  animate__slow"></i>
                     </div>
                     <div class="logo">
-                        <img src="../Image/Logo/web_design_studio.png " alt="" class="animate__animated animate__bounceInDown animate__fast animate__delay-2s">
+                        <img src="../Image/Logo/web_design_studio.png " alt=""
+                            class="animate__animated animate__bounceInDown animate__fast animate__delay-2s">
                     </div>
                     <div class="text">
-                        <h1 class="animate__animated animate__backInDown animate__slow">Sign In</h1>
+                        <h1 class="animate__animated animate__backInDown animate__slow">Sign Up</h1>
                     </div>
                     <form action="" class="animate__animated animate__fadeInLeftBig  animate__slow">
                         <div class="wrapper-container-form">
@@ -46,55 +50,40 @@
                                 <input type="email" id="email" name="email">
                             </div>
                         </div>
-                       
+
                         <div class="wrapper-container-form">
                             <div class="container-form">
                                 <label for="password">Password</label>
-                                <div class="wrapper-eye">
-                                    <input type="password" id="password-eye" name="password">
-                                    <button type="button" onclick="showPassword()" aria-label="hide password">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-slash" viewBox="0 0 16 16">
-                                            <path d="M13.359 11.238C15.06 9.72 16 8 16 8s-3-5.5-8-5.5a7 7 0 0 0-2.79.588l.77.771A6 6 0 0 1 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755q-.247.248-.517.486z"/>
-                                            <path d="M11.297 9.176a3.5 3.5 0 0 0-4.474-4.474l.823.823a2.5 2.5 0 0 1 2.829 2.829zm-2.943 1.299.822.822a3.5 3.5 0 0 1-4.474-4.474l.823.823a2.5 2.5 0 0 0 2.829 2.829"/>
-                                            <path d="M3.35 5.47q-.27.24-.518.487A13 13 0 0 0 1.172 8l.195.288c.335.48.83 1.12 1.465 1.755C4.121 11.332 5.881 12.5 8 12.5c.716 0 1.39-.133 2.02-.36l.77.772A7 7 0 0 1 8 13.5C3 13.5 0 8 0 8s.939-1.721 2.641-3.238l.708.709zm10.296 8.884-12-12 .708-.708 12 12z"/>
-                                        </svg>
-                                    </button>
-                                </div>            
+
+                                <input type="password" id="password-eye" name="password">
+                            </div>
+                            <div class="container-form">
                                 <label for="password">Confirm Password</label>
-                                <div class="wrapper-eye">
-                                    <input type="password" id="password-eye" name="password">
-                                    <button type="button" onclick="showPassword()" aria-label="hide password">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-slash" viewBox="0 0 16 16">
-                                            <path d="M13.359 11.238C15.06 9.72 16 8 16 8s-3-5.5-8-5.5a7 7 0 0 0-2.79.588l.77.771A6 6 0 0 1 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755q-.247.248-.517.486z"/>
-                                            <path d="M11.297 9.176a3.5 3.5 0 0 0-4.474-4.474l.823.823a2.5 2.5 0 0 1 2.829 2.829zm-2.943 1.299.822.822a3.5 3.5 0 0 1-4.474-4.474l.823.823a2.5 2.5 0 0 0 2.829 2.829"/>
-                                            <path d="M3.35 5.47q-.27.24-.518.487A13 13 0 0 0 1.172 8l.195.288c.335.48.83 1.12 1.465 1.755C4.121 11.332 5.881 12.5 8 12.5c.716 0 1.39-.133 2.02-.36l.77.772A7 7 0 0 1 8 13.5C3 13.5 0 8 0 8s.939-1.721 2.641-3.238l.708.709zm10.296 8.884-12-12 .708-.708 12 12z"/>
-                                        </svg>
-                                    </button>
-                                </div>            
+
+                                <input type="password" id="password-eye" name="password">
                             </div>
                         </div>
-                        
-                        <div class="checkbox-container">
-                            <div class="checkbox-wrapper">
-                                <input type="checkbox" id="remember" name="tick">
-                                <label for="remember">I agree with the terms of use</label>
-                            </div>
-                        </div>
-                        <div class="submit-form">
-                            <button class="daftar" type="submit">Sign Up</button>
-                        </div>
-                        <footer> 
-                            <p>or sign in with other acconts?</p>
-                            <div class="signIn-options"></div>
-                            <div class="linkTosignUp">
-                                <p>Already have an Account? <a href="#">sign In</a></p>
-                            </div>
-                        </footer>
-                    </form>
+                <div class="checkbox-container">
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="remember" name="tick">
+                        <label for="remember">I agree with the terms of use</label>
+                    </div>
+                </div>
+                <div class="submit-form">
+                    <button class="daftar" type="submit">Sign Up</button>
+                </div>
+                <footer>
+                    <p>or sign in with other acconts?</p>
+                    <div class="signIn-options"></div>
+                    <div class="linkTosignUp">
+                        <p>Already have an Account? <a href="signin.html">Sign In</a></p>
+                    </div>
+                </footer>
+                </form>
                 </div>
             </main>
         </header>
-    
+
         <aside>
             <div class="image-signin">
                 <img src="../Image/Logo/signIn.png" alt="signIn image">
@@ -104,11 +93,12 @@
                 <hr>
                 <div class="signIn-options"></div>
             </div>
-            
+
         </aside>
     </section>
     <script src="../Js/SignIn.js"></script>
     <script src="../node_modules/particles.js/particles.js"></script>
     <script src="../node_modules/particles.js/demo/js/app.js"></script>
 </body>
+
 </html>
