@@ -61,11 +61,11 @@
         &:hover {
             color: $home_dark_txt;
 
-            &::after{
-                border: 2px solid lightgreen;
-                background-image: linear-gradient(92.88deg, #45b55e 9.16%, #56cc43 43.89%, #67d73f 64.72%);
-                transition-duration: .1s;
-            }
+            // &::after{
+            //     border: 2px solid lightgreen;
+            //     background-image: linear-gradient(92.88deg, #45b55e 9.16%, #56cc43 43.89%, #67d73f 64.72%);
+            //     transition-duration: .1s;
+            // }
         }
     }
     
