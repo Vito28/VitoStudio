@@ -296,8 +296,7 @@ body {
 div.detail {
   display: flex;
   color: white;
-  margin-top: 8rem;
-  z-index: -999;
+  margin-top: 10%;
 }
 div.detail section {
   width: 50%;
