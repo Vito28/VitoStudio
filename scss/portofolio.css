@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+nav {
+  display: flex;
+  background-color: transparent;
+  justify-content: space-around;
+  width: 100%;
+  padding: 20px 0;
+  color: rgb(125, 243, 243);
+}
+nav .brand img {
+  width: 4rem;
+  height: 2.2rem;
+}
+nav .wrapper-responsive ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  width: 700px;
+  position: absolute;
+  height: 40px;
+}
+nav .wrapper-responsive ul li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1rem;
+}
+nav .wrapper-responsive .null {
+  width: 700px;
+  height: 39px;
+}
+nav .menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+nav .menu-toggle input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  top: -3px;
+  left: -5.8px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+nav .menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: rgb(11, 200, 200);
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+nav .menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+nav .menu-toggle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+nav .menu-toggle input:checked ~ span:nth-child(2) {
+  background-color: white;
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+nav .menu-toggle input:checked ~ span:nth-child(4) {
+  background-color: white;
+  transform: rotate(-45deg) translate(-1px, 0);
+}
+nav .menu-toggle input:checked ~ span:nth-child(3) {
+  opacity: 0;
+  transform: scale(0);
+}
+
+@media screen and (min-width: 1024px) {
+  nav ul {
+    top: 5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  nav ul {
+    width: 55%;
+  }
+}
+@media screen and (max-width: 576px) {
+  nav ul {
+    margin-top: 5rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    flex-direction: column;
+    width: 80%;
+    height: 400px;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(11, 200, 200);
+    z-index: -1;
+    transform: translateX(100%);
+    transition: all 1s;
+    opacity: 0;
+  }
+  nav ul.slide {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  nav .menu-toggle {
+    display: flex;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}/*# sourceMappingURL=portofolio.css.map */
