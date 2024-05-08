@@ -27,3 +27,9 @@ const navbar = `
     </div>    
 `
 document.querySelector('nav').innerHTML = navbar;
+
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('nav .wrapper-responsive');
+menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('slide')
+})

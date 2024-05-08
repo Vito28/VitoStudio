@@ -193,6 +193,14 @@ nav .menu-toggle input:checked ~ span:nth-child(3) {
     top: 5rem;
     width: 850px;
   }
+  nav .wrapper-responsive .menu-list ul li {
+    background-color: #4ef1e1;
+    padding: 1rem 1.8rem;
+    border-radius: 100px;
+  }
+  nav .wrapper-responsive .menu-list ul li a {
+    color: #000;
+  }
 }
 @media screen and (max-width: 1024px) {
   nav .wrapper-responsive .menu-list ul {
