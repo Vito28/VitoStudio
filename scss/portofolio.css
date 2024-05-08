@@ -3,50 +3,80 @@
   margin: 0;
   padding: 0;
   font-size: 0.8rem;
+  color: white;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
+  background: url("../../Image/Logo/background_in_space.gif");
 }
 
 nav {
   display: flex;
-  background-color: transparent;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-  padding: 20px 0;
+  padding: 10px 0;
   color: rgb(125, 243, 243);
+  background-color: #282a35;
+  border-bottom: 1px solid rgb(84, 81, 81);
+  position: fixed;
+  top: 0;
+}
+nav .brand {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 nav .brand img {
   width: 4rem;
   height: 2.2rem;
 }
-nav .wrapper-responsive ul {
+nav .wrapper-responsive {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .wrapper-responsive .menu-list {
+  width: 850px;
+}
+nav .wrapper-responsive .menu-list ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   list-style: none;
-  width: 600px;
+  width: 100%;
   position: absolute;
   height: 40px;
 }
-nav .wrapper-responsive ul li a {
-  color: #000;
+nav .wrapper-responsive .menu-list ul li a {
+  color: #fff;
   text-decoration: none;
   font-size: 1rem;
 }
-nav .wrapper-responsive .null {
-  width: 600px;
+nav .wrapper-responsive .menu-list .null {
+  width: 100%;
   height: 39px;
 }
-nav .form_auth .button-custom button {
+nav .wrapper-responsive .form_auth {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  margin-left: 3rem;
+}
+nav .wrapper-responsive .form_auth button {
   background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
   border-radius: 10px;
   border-style: none;
   box-sizing: border-box;
-  color: white;
+  color: #212121;
   cursor: pointer;
   font-weight: 500;
   text-align: center;
@@ -59,7 +89,7 @@ nav .form_auth .button-custom button {
   -webkit-user-select: none;
   touch-action: manipulation;
 }
-nav .form_auth .button-custom button::before {
+nav .wrapper-responsive .form_auth button::before {
   content: "";
   background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
   position: absolute;
@@ -74,11 +104,11 @@ nav .form_auth .button-custom button::before {
   animation: glowing-button 20s linear infinite;
   transition: opacity 0.3s ease-in-out;
 }
-nav .form_auth .button-custom button::after {
+nav .wrapper-responsive .form_auth button::after {
   z-index: -1;
   content: "";
   position: absolute;
-  background: rgb(38, 41, 48);
+  background: #f0f0f0;
   width: 100%;
   height: 100%;
   left: 0;
@@ -86,10 +116,10 @@ nav .form_auth .button-custom button::after {
   border-radius: 10px;
   border: 2px solid white;
 }
-nav .form_auth .button-custom button:hover {
+nav .wrapper-responsive .form_auth button:hover {
   color: rgb(71, 79, 79);
 }
-nav .form_auth .button-custom button:hover::after {
+nav .wrapper-responsive .form_auth button:hover::after {
   border: 2px solid lightgreen;
   background-image: linear-gradient(92.88deg, #45b55e 9.16%, #56cc43 43.89%, #67d73f 64.72%);
   transition-duration: 0.1s;
@@ -105,8 +135,8 @@ nav .form_auth .button-custom button:hover::after {
     background-position: 0 0;
   }
 }
-nav .form_auth .button-custom button {
-  padding: 8px;
+nav .wrapper-responsive .form_auth button {
+  padding: 8px 8px 4px 13px;
 }
 nav .menu-toggle {
   display: none;
@@ -140,11 +170,11 @@ nav .menu-toggle span:nth-child(4) {
   transform-origin: 0 100%;
 }
 nav .menu-toggle input:checked ~ span:nth-child(2) {
-  background-color: white;
+  background-color: #4ef1e1;
   transform: rotate(45deg) translate(-1px, -1px);
 }
 nav .menu-toggle input:checked ~ span:nth-child(4) {
-  background-color: white;
+  background-color: #4ef1e1;
   transform: rotate(-45deg) translate(-1px, 0);
 }
 nav .menu-toggle input:checked ~ span:nth-child(3) {
@@ -153,39 +183,93 @@ nav .menu-toggle input:checked ~ span:nth-child(3) {
 }
 
 @media screen and (min-width: 768px) {
-  nav ul {
+  nav .wrapper-responsive {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  nav .wrapper-responsive .menu-list ul {
     top: 5rem;
+    width: 850px;
   }
 }
-@media screen and (max-width: 768px) {
-  nav .wrapper-responsive ul {
+@media screen and (max-width: 1024px) {
+  nav .wrapper-responsive .menu-list ul {
     position: relative;
-    width: 500px;
+    width: 700px;
   }
-  nav .wrapper-responsive .null {
+  nav .wrapper-responsive .menu-list .null {
+    display: none;
+  }
+  nav .wrapper-responsive .auth-form {
+    margin: 0;
+    flex-direction: center;
+  }
+}
+@media screen and (max-width: 900px) {
+  nav .wrapper-responsive .menu-list ul {
+    position: relative;
+    width: 650px;
+  }
+  nav .wrapper-responsive .menu-list .null {
     display: none;
   }
 }
-@media screen and (max-width: 576px) {
-  nav ul {
+@media screen and (max-width: 768px) {
+  nav .wrapper-responsive .menu-list ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    width: 100%;
+  }
+  nav .wrapper-responsive .menu-list .null {
+    display: none;
+  }
+}
+@media screen and (max-width: 676px) {
+  nav .wrapper-responsive {
     margin-top: 5rem;
     position: absolute;
     right: 0;
     top: 0;
     flex-direction: column;
-    width: 80%;
+    width: 50%;
     height: 400px;
-    align-items: center;
     justify-content: space-evenly;
-    background-color: rgb(11, 200, 200);
-    z-index: -1;
+    background-color: #4ef1e1;
+    z-index: 2;
     transform: translateX(100%);
     transition: all 1s;
-    opacity: 0;
+    opacity: 1;
   }
-  nav ul.slide {
+  nav .wrapper-responsive.slide {
+    color: #4ef1e1;
     transform: translateX(0);
     opacity: 1;
+  }
+  nav .wrapper-responsive .menu-list ul {
+    position: absolute;
+    display: flex;
+    right: 0px;
+    top: 0;
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+  }
+  nav .wrapper-responsive .menu-list .null {
+    display: none;
+  }
+  nav .wrapper-responsive .form_auth {
+    width: 120px;
+    display: flex;
+    flex-direction: center;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
   }
   nav .menu-toggle {
     display: flex;

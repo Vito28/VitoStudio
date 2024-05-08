@@ -1,6 +1,9 @@
 @import './Data/var';
+@import './Data/navbar';
 
 $br: 10px;
+
+
 
 * {
     box-sizing: border-box;
@@ -18,8 +21,9 @@ body {
 
 div.detail {
     display: flex;
-    background: linear-gradient(to left, $home_light_clr 10%, rgb(0, 149, 255));
+    // background: linear-gradient(to left, $home_light_clr 10%, rgb(0, 149, 255));
     color: $home_light_txt;
+    margin-top: 8rem;
 
     section {
         width: 50%;
