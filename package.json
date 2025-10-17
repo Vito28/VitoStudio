@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "sass:dev": "sass --watch assets/scss/main.scss assets/css/main.css",
-    "sass:build": "sass --style=compressed assets/scss/main.scss assets/css/main.css"
+    "sass:build": "sass --style=compressed assets/scss/main.scss assets/css/main.css",
+    "deploy": "gh-pages -d ."
   },
   "dependencies": {
     "particles.js": "^2.0.0"
