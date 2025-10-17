@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | 404 Error</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Inter", "Segoe UI", sans-serif;
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: var(--space-4);
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .error-code {
+            font-family: "Playfair Display", "Times New Roman", serif;
+            font-size: 12rem;
+            font-weight: 700;
+            line-height: 1;
+            background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-strong) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: var(--space-3);
+            text-shadow: 0 8px 24px rgba(12, 15, 24, 0.2);
+        }
+
+        .error-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: var(--space-3);
+        }
+
+        .error-message {
+            font-size: 1.2rem;
+            color: var(--color-muted);
+            margin-bottom: var(--space-5);
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--color-accent);
+            color: var(--color-bg);
+            text-decoration: none;
+            padding: var(--space-2) var(--space-4);
+            border-radius: var(--radius-md);
+            font-weight: 600;
+            transition: all 0.2s ease;
+            box-shadow: var(--shadow-elevated);
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 16px 30px rgba(12, 15, 24, 0.18);
+        }
+
+        .btn:active {
+            transform: translateY(1px);
+        }
+
+        .illustration {
+            margin-top: var(--space-5);
+            max-width: 350px;
+            width: 100%;
+            height: auto;
+            opacity: 0.9;
+        }
+
+        .theme-toggle {
+            position: absolute;
+            top: var(--space-4);
+            right: var(--space-4);
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            color: var(--color-text);
+            padding: var(--space-2);
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: var(--space-1);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <button class="theme-toggle" id="themeToggle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+        </svg>
+        <span>Toggle Theme</span>
+    </button>
+
+    <div class="container">
+        <h1 class="error-code">404</h1>
+        <h2 class="error-title">Page Not Found</h2>
+        <p class="error-message">The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.</p>
+        <a href="index.html" class="btn">Back to Homepage</a>
+        
+        <svg class="illustration" viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+            <path d="M412.6,246.8c-33.1,44.1-127.3,49.9-192.6,34.4s-98.9-32.6-147.8-49.9c-48.9-17.3-98.1-20.4-111.6-58.3s35.1-62.4,75.6-85.7S126.6,53.1,185.5,38s113.3-40.8,150.6-12.2c37.3,28.6,30.8,86.6,61.2,115.1C427.8,169.5,445.7,202.6,412.6,246.8z" fill="var(--color-surface)" stroke="var(--color-border)" stroke-width="2"/>
+            <circle cx="299" cy="180" r="40" fill="var(--color-accent)" opacity="0.2"/>
+            <path d="M210,120 L170,170 L210,220" fill="none" stroke="var(--color-accent)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M290,120 L330,170 L290,220" fill="none" stroke="var(--color-accent)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M260,110 L240,230" fill="none" stroke="var(--color-accent-strong)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        
+        // Check for saved theme preference or use device preference
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        
+        // Set initial theme
+        if (savedTheme) {
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        } else if (prefersDark) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+        
+        // Toggle theme
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+    </script>
+</body>
+</html>
