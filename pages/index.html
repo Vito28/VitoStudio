@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VitoStudio — Digital Product Partner</title>
+  <meta name="description" content="VitoStudio crafts digital experiences, helping teams launch products with clarity and momentum.">
+  <meta property="og:title" content="VitoStudio — Digital Product Partner">
+  <meta property="og:description" content="Discover our services, workflow, testimonials, and pricing for your next digital product.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/">
+  <link rel="preload" as="style" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
+</head>
+
+<body data-page="home">
+  <header class="site-header" data-js="site-header">
+    <div class="layout__container navbar">
+      <a class="navbar__brand" href="./index.html" aria-label="VitoStudio homepage">
+        VitoStudio
+      </a>
+      <nav class="navbar__nav">
+        <ul class="navbar__menu" id="main-menu" data-js="navbar-menu" aria-expanded="false">
+          <li><a class="navbar__link navbar__link--active" href="./index.html">Home</a></li>
+          <li><a class="navbar__link" href="./blog.html">Insights</a></li>
+          <li><a class="navbar__link" href="./pricing.html">Pricing</a></li>
+          <li><a class="navbar__link" href="./blog-detail.html">Case Study</a></li>
+          <li><a class="navbar__link" href="./signin.html">Sign in</a></li>
+          <li class="navbar__item navbar__item--theme">
+            <button class="navbar__theme" data-js="theme-toggle" type="button" aria-label="Toggle theme">Theme</button>
+          </li>
+        </ul> 
+      </nav>
+      <button class="navbar__hamburger" data-js="navbar-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Toggle navigation">
+        <span class="navbar__hamburger-line"></span>
+        <span class="navbar__hamburger-line"></span>
+        <span class="navbar__hamburger-line"></span>
+      </button>
+    </div>
+    <div class="navbar__overlay" data-js="navbar-overlay" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <section class="layout__container u-section hero">
+      <div class="hero__content">
+        <span class="type-subtitle">Digital product partners</span>
+        <h1>Designing clarity for teams who build ambitious products.</h1>
+        <p>From discovery to deployment, we align strategy, design, and engineering so your product can launch faster with less guesswork and more delight.</p>
+        <div class="hero__actions">
+          <a class="btn" href="./pricing.html">Start a project</a>
+          <a class="btn btn--ghost" href="./blog-detail.html">View case study</a>
+        </div>
+      </div>
+      <div class="hero__media" data-slot="home-hero"></div>
+    </section>
+
+    <section class="layout__container u-section">
+      <div class="metrics" role="list">
+        <article class="metrics__item" role="listitem">
+          <p class="metrics__value">98%</p>
+          <p class="metrics__label">Client satisfaction</p>
+        </article>
+        <article class="metrics__item" role="listitem">
+          <p class="metrics__value">30+</p>
+          <p class="metrics__label">Products launched</p>
+        </article>
+        <article class="metrics__item" role="listitem">
+          <p class="metrics__value">12</p>
+          <p class="metrics__label">Design sprints per year</p>
+        </article>
+        <article class="metrics__item" role="listitem">
+          <p class="metrics__value">5.0</p>
+          <p class="metrics__label">Average rating</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="layout__container u-section services" id="services">
+      <div class="layout__grid">
+        <div>
+          <span class="type-subtitle">Services</span>
+          <h2>Product teams trust us to ship stronger releases.</h2>
+          <p>We combine discovery, experimentation, and delivery to translate fuzzy product goals into validated experiences.</p>
+        </div>
+        <div class="services__media" data-slot="home-services"></div>
+      </div>
+      <div class="services__grid">
+        <article class="card services__card">
+          <span class="card__badge">Strategy</span>
+          <h3 class="card__title">Discovery &amp; Product Framing</h3>
+          <p class="card__text">Align stakeholders, define opportunities, and map a clear product thesis with measurable success metrics.</p>
+        </article>
+        <article class="card services__card">
+          <span class="card__badge">Experience</span>
+          <h3 class="card__title">UX/UI Design Systems</h3>
+          <p class="card__text">Build scalable design languages that improve velocity, consistency, and accessibility across every interface.</p>
+        </article>
+        <article class="card services__card">
+          <span class="card__badge">Engineering</span>
+          <h3 class="card__title">Front-end Delivery</h3>
+          <p class="card__text">Translate tested concepts into high-quality, performant code ready for integration with your existing stack.</p>
+        </article>
+        <article class="card services__card">
+          <span class="card__badge">Enablement</span>
+          <h3 class="card__title">Continuous Optimisation</h3>
+          <p class="card__text">Track impact, run experiments, and iterate with data-informed decisions post-launch.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="layout__container u-section workflow" id="workflow">
+      <span class="type-subtitle">Workflow</span>
+      <h2>Discovery through deployment, one consistent crew.</h2>
+      <div class="workflow__steps">
+        <article class="workflow__step">
+          <span class="workflow__badge">01</span>
+          <h3>Discovery</h3>
+          <p>Interviews, audits, and opportunity mapping to unpack product context and customer needs.</p>
+        </article>
+        <article class="workflow__step">
+          <span class="workflow__badge">02</span>
+          <h3>Design</h3>
+          <p>Rapid concept sprints, validation flows, and component systems ready for implementation.</p>
+        </article>
+        <article class="workflow__step">
+          <span class="workflow__badge">03</span>
+          <h3>Develop</h3>
+          <p>Vanilla, standards-first engineering executed in the open with weekly previews and QA.</p>
+        </article>
+        <article class="workflow__step">
+          <span class="workflow__badge">04</span>
+          <h3>Test</h3>
+          <p>Accessibility, performance, and usability checks ensure polished releases.</p>
+        </article>
+        <article class="workflow__step">
+          <span class="workflow__badge">05</span>
+          <h3>Deploy</h3>
+          <p>Launch orchestration plus playbooks to support your team after handoff.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="layout__container u-section">
+      <div class="testimonials" data-js="testimonial-slider">
+        <div class="layout__grid">
+          <div>
+            <span class="type-subtitle">Testimonials</span>
+            <h2>People keep us around for the clarity we bring.</h2>
+            <p>We embed alongside product leads, researchers, and engineers to keep decision-making honest and collaborative.</p>
+          </div>
+          <div class="testimonials__viewport">
+            <div class="testimonials__track" data-js="testimonial-track">
+              <article class="testimonials__card">
+                <p class="testimonials__quote">“VitoStudio turned our fragmented vision into a cohesive product strategy in four weeks. Execution felt effortless.”</p>
+                <div>
+                  <p class="testimonials__author">Mira Santoso</p>
+                  <p class="testimonials__role">VP Product, LumaPay</p>
+                </div>
+              </article>
+              <article class="testimonials__card">
+                <p class="testimonials__quote">“The team introduced sustainable systems that our developers and designers now rely on every day.”</p>
+                <div>
+                  <p class="testimonials__author">Adi Rahman</p>
+                  <p class="testimonials__role">Head of Design, Atlas Labs</p>
+                </div>
+              </article>
+              <article class="testimonials__card">
+                <p class="testimonials__quote">“We shipped our new onboarding in record time thanks to their direct collaboration with our engineers.”</p>
+                <div>
+                  <p class="testimonials__author">Sarah Gupta</p>
+                  <p class="testimonials__role">Product Lead, Orbit Health</p>
+                </div>
+              </article>
+            </div>
+            <div class="testimonials__controls" role="tablist" aria-label="Testimonials navigation">
+              <button class="testimonials__dot testimonials__dot--active" type="button" data-js="testimonial-dot" aria-label="Show testimonial 1" aria-selected="true"></button>
+              <button class="testimonials__dot" type="button" data-js="testimonial-dot" aria-label="Show testimonial 2"></button>
+              <button class="testimonials__dot" type="button" data-js="testimonial-dot" aria-label="Show testimonial 3"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="layout__container u-section experience" id="experience">
+      <div class="layout__grid">
+        <div>
+          <span class="type-subtitle">Experience &amp; Achievements</span>
+          <h2>A decade of growth-minded product launches.</h2>
+          <p>We stay hands-on with complex teams, shipping improvements that compound value over time.</p>
+          <div class="experience__counters">
+            <article class="experience__counter">
+              <p class="experience__value">7 yrs</p>
+              <p class="experience__label">Average partner tenure</p>
+            </article>
+            <article class="experience__counter">
+              <p class="experience__value">+42%</p>
+              <p class="experience__label">Conversion uplift per launch</p>
+            </article>
+            <article class="experience__counter">
+              <p class="experience__value">3M+</p>
+              <p class="experience__label">Users impacted</p>
+            </article>
+          </div>
+        </div>
+        <div>
+          <div class="timeline">
+            <article class="timeline__item">
+              <h3 class="timeline__title">Atlas Labs Rebrand &amp; App</h3>
+              <p class="timeline__meta">2024 · Product Growth</p>
+              <p>Scaled a modular design system across five squads, lifting retention by 18%.</p>
+              <div class="timeline__metrics">
+                <div class="timeline__metric">
+                  <span class="timeline__metric-value">5 squads</span>
+                  <span class="timeline__metric-label">Aligned</span>
+                </div>
+                <div class="timeline__metric">
+                  <span class="timeline__metric-value">18%</span>
+                  <span class="timeline__metric-label">Retention lift</span>
+                </div>
+              </div>
+            </article>
+            <article class="timeline__item">
+              <h3 class="timeline__title">LumaPay Growth Engine</h3>
+              <p class="timeline__meta">2023 · Fintech</p>
+              <p>Rebuilt onboarding and dashboard ledgers with experimentation frameworks embedded.</p>
+              <div class="timeline__metrics">
+                <div class="timeline__metric">
+                  <span class="timeline__metric-value">2.4x</span>
+                  <span class="timeline__metric-label">Activation</span>
+                </div>
+                <div class="timeline__metric">
+                  <span class="timeline__metric-value">11</span>
+                  <span class="timeline__metric-label">Experiments shipped</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="layout__container u-section">
+      <div class="layout__grid">
+        <div>
+          <span class="type-subtitle">Insights</span>
+          <h2>Latest articles &amp; research notes</h2>
+          <p>We share pattern libraries, retro notes, and growth experiments openly.</p>
+          <a class="btn btn--ghost" href="./blog.html">Browse all insights</a>
+        </div>
+        <div class="blog__list">
+          <article class="blog__item">
+            <div class="blog__meta">
+              <span>Research</span>
+              <time datetime="2024-03-18">Mar 18, 2024</time>
+            </div>
+            <h3>Designing experiments that keep teams aligned</h3>
+            <p>The playbook we use to prevent validation theatre and keep stakeholders invested.</p>
+            <a class="navbar__link" href="./blog-detail.html">Read story →</a>
+          </article>
+          <article class="blog__item">
+            <div class="blog__meta">
+              <span>Engineering</span>
+              <time datetime="2024-02-22">Feb 22, 2024</time>
+            </div>
+            <h3>The heuristics we use for sustainable front-ends</h3>
+            <p>Guidelines to keep interfaces lean, accessible, and maintainable without frameworks.</p>
+            <a class="navbar__link" href="./blog-detail.html">Read story →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="layout__container u-section" id="pricing">
+      <div class="pricing">
+        <div class="layout__grid">
+          <div>
+            <span class="type-subtitle">Pricing</span>
+            <h2>Two simple ways to start working with us.</h2>
+            <p>Pick a starter plan or schedule a scope workshop to design a bespoke engagement.</p>
+          </div>
+          <div class="pricing__media" data-slot="home-pricing"></div>
+        </div>
+        <div class="pricing__plans">
+          <article class="pricing__card" data-tier="basic">
+            <div>
+              <h3>Basic</h3>
+              <p class="pricing__price">$4,800</p>
+              <p class="pricing__billing">per sprint</p>
+            </div>
+            <ul class="pricing__features">
+              <li class="pricing__feature">Discovery workshop</li>
+              <li class="pricing__feature">Customer journey map</li>
+              <li class="pricing__feature">Design concepts &amp; prototype</li>
+              <li class="pricing__feature">Implementation playbook</li>
+            </ul>
+            <button class="btn" type="button" data-js="open-payment" data-plan="basic">Get Started</button>
+          </article>
+          <article class="pricing__card pricing__card--highlight" data-tier="pro">
+            <div>
+              <h3>Pro</h3>
+              <p class="pricing__price">$8,900</p>
+              <p class="pricing__billing">per month</p>
+            </div>
+            <ul class="pricing__features">
+              <li class="pricing__feature">Embedded product squad</li>
+              <li class="pricing__feature">Design system delivery</li>
+              <li class="pricing__feature">Front-end implementation</li>
+              <li class="pricing__feature">Experimentation roadmap</li>
+            </ul>
+            <button class="btn" type="button" data-js="open-payment" data-plan="pro">Book a kickoff</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="layout__container u-section">
+      <div class="cta">
+        <h2>Ready to explore outcomes we can unlock?</h2>
+        <p>Tell us about your product, or ask for the detailed case studies behind these metrics.</p>
+        <div class="hero__actions">
+          <a class="btn" href="./signup.html">Join the workspace</a>
+          <a class="btn btn--ghost" href="mailto:hello@VitoStudio.io">Schedule a call</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="layout__container">
+      <div class="site-footer__top">
+        <p class="site-footer__brand">VitoStudio</p>
+        <div class="site-footer__links">
+          <a href="./blog.html">Insights</a>
+          <a href="./pricing.html">Pricing</a>
+          <a href="./signup.html">Create account</a>
+          <a href="mailto:hello@VitoStudio.io" aria-label="Email VitoStudio">Contact</a>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <p>© <span data-js="year"></span> VitoStudio. Shaping responsible digital products.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="../js/app.js"></script>
+</body>
+
+</html>

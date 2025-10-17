@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Insights — VitoStudio</title>
+  <meta name="description" content="Browse VitoStudio articles covering discovery, design, and engineering for digital products.">
+  <meta property="og:title" content="Insights — VitoStudio">
+  <meta property="og:description" content="Articles about product discovery, UX design, experimentation, and engineering.">
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body data-page="blog">
+  <header class="site-header" data-js="site-header">
+    <div class="layout__container navbar">
+      <a class="navbar__brand" href="./index.html">VitoStudio</a>
+      <nav class="navbar__nav">
+        <ul class="navbar__menu" id="main-menu" data-js="navbar-menu" aria-expanded="false">
+          <li><a class="navbar__link" href="./index.html">Home</a></li>
+          <li><a class="navbar__link navbar__link--active" href="./blog.html">Insights</a></li>
+          <li><a class="navbar__link" href="./pricing.html">Pricing</a></li>
+          <li><a class="navbar__link" href="./blog-detail.html">Case Study</a></li>
+          <li><a class="navbar__link" href="./signin.html">Sign in</a></li>
+          <li class="navbar__item navbar__item--theme">
+            <button class="navbar__theme" data-js="theme-toggle" type="button" aria-label="Toggle theme">Theme</button>
+          </li>
+        </ul>
+      </nav>
+      <button class="navbar__hamburger" data-js="navbar-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Toggle navigation">
+        <span class="navbar__hamburger-line"></span>
+        <span class="navbar__hamburger-line"></span>
+        <span class="navbar__hamburger-line"></span>
+      </button>
+    </div>
+    <div class="navbar__overlay" data-js="navbar-overlay" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <section class="layout__container u-section blog-page">
+      <div>
+        <span class="type-subtitle">Insights</span>
+        <h1>Fresh thinking from our product, design, and engineering teams.</h1>
+        <p>Ideas we test with partners, templates we rely on, and reflections after launches.</p>
+      </div>
+
+      <div class="blog-page__filters" role="toolbar" aria-label="Filter articles">
+        <button class="blog-page__tag" type="button" data-tag="all" aria-pressed="true">All</button>
+        <button class="blog-page__tag" type="button" data-tag="strategy">Strategy</button>
+        <button class="blog-page__tag" type="button" data-tag="design">Design</button>
+        <button class="blog-page__tag" type="button" data-tag="engineering">Engineering</button>
+        <button class="blog-page__tag" type="button" data-tag="growth">Growth</button>
+      </div>
+
+      <div class="blog-page__grid" data-js="blog-list">
+        <article class="blog__item" data-tag="strategy">
+          <div class="blog__meta">
+            <span>Strategy</span>
+            <time datetime="2024-03-18">Mar 18, 2024</time>
+          </div>
+          <h3>Shaping product bets that still leave room for discovery</h3>
+          <p>How we co-create hypotheses with product leads and keep teams aligned through each sprint.</p>
+          <a class="navbar__link" href="./blog-detail.html">Read story →</a>
+        </article>
+        <article class="blog__item" data-tag="design">
+          <div class="blog__meta">
+            <span>Design</span>
+            <time datetime="2024-02-28">Feb 28, 2024</time>
+          </div>
+          <h3>Creating playback rituals that improve design feedback loops</h3>
+          <p>Guidelines we give to squads for frictionless async reviews that avoid endless meetings.</p>
+          <a class="navbar__link" href="./blog-detail.html">Read story →</a>
+        </article>
+        <article class="blog__item" data-tag="engineering">
+          <div class="blog__meta">
+            <span>Engineering</span>
+            <time datetime="2024-01-14">Jan 14, 2024</time>
+          </div>
+          <h3>Migrating away from frameworks without losing velocity</h3>
+          <p>The vanilla stack we use and how we introduce gradual improvements without painful rewrites.</p>
+          <a class="navbar__link" href="./blog-detail.html">Read story →</a>
+        </article>
+      </div>
+
+      <div class="blog__pagination">
+        <button class="btn btn--ghost" type="button" data-js="load-more">Load more</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="layout__container">
+      <div class="site-footer__top">
+        <p class="site-footer__brand">VitoStudio</p>
+        <div class="site-footer__links">
+          <a href="./blog.html">Insights</a>
+          <a href="./pricing.html">Pricing</a>
+          <a href="./signup.html">Create account</a>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <p>© <span data-js="year"></span> VitoStudio. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="../js/app.js"></script>
+</body>
+
+</html>

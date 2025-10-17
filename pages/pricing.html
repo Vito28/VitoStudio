@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pricing — VitoStudio</title>
+  <meta name="description" content="Choose the perfect engagement to partner with VitoStudio.">
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body data-page="pricing">
+  <header class="site-header" data-js="site-header">
+    <div class="layout__container navbar">
+      <a class="navbar__brand" href="./index.html">VitoStudio</a>
+      <nav class="navbar__nav">
+        <ul class="navbar__menu" id="main-menu" data-js="navbar-menu" aria-expanded="false">
+          <li><a class="navbar__link" href="./index.html">Home</a></li>
+          <li><a class="navbar__link" href="./blog.html">Insights</a></li>
+          <li><a class="navbar__link navbar__link--active" href="./pricing.html">Pricing</a></li>
+          <li><a class="navbar__link" href="./blog-detail.html">Case Study</a></li>
+          <li><a class="navbar__link" href="./signin.html">Sign in</a></li>
+          <li class="navbar__item navbar__item--theme">
+            <button class="navbar__theme" data-js="theme-toggle" type="button" aria-label="Toggle theme">Theme</button>
+          </li>
+        </ul>
+      </nav>
+      <button class="navbar__hamburger" data-js="navbar-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Toggle navigation">
+        <span class="navbar__hamburger-line"></span>
+        <span class="navbar__hamburger-line"></span>
+        <span class="navbar__hamburger-line"></span>
+      </button>
+    </div>
+    <div class="navbar__overlay" data-js="navbar-overlay" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <section class="layout__container u-section pricing">
+      <header>
+        <span class="type-subtitle">Pricing</span>
+        <h1>Start with a sprint or embed an end-to-end squad.</h1>
+        <p>Each engagement includes dedicated strategic direction, delivery oversight, and shared rituals with your internal team.</p>
+      </header>
+
+      <div class="pricing__plans">
+        <article class="pricing__card" data-tier="basic">
+          <div>
+            <h2>Basic</h2>
+            <p class="pricing__price">$4,800</p>
+            <p class="pricing__billing">per sprint · 2 weeks</p>
+          </div>
+          <ul class="pricing__features">
+            <li class="pricing__feature">Discovery interviews &amp; opportunity framing</li>
+            <li class="pricing__feature">Service blueprint &amp; prioritized roadmap</li>
+            <li class="pricing__feature">Interactive prototype &amp; research playback</li>
+            <li class="pricing__feature">Implementation handoff kit</li>
+          </ul>
+          <button class="btn" type="button" data-js="open-payment" data-plan="basic">Start the sprint</button>
+        </article>
+
+        <article class="pricing__card" data-tier="pro">
+          <div>
+            <h2>Pro</h2>
+            <p class="pricing__price">$8,900</p>
+            <p class="pricing__billing">per month · 4-week cadence</p>
+          </div>
+          <ul class="pricing__features">
+            <li class="pricing__feature">Embedded product strategist &amp; design lead</li>
+            <li class="pricing__feature">Full-stack front-end engineering pod</li>
+            <li class="pricing__feature">Design system foundations &amp; documentation</li>
+            <li class="pricing__feature">Experimentation program &amp; analytics support</li>
+          </ul>
+          <button class="btn" type="button" data-js="open-payment" data-plan="pro">Book a kickoff</button>
+        </article>
+      </div>
+
+      <div class="card">
+        <h2>Need a custom scope?</h2>
+        <p>We also offer retainer partnerships for teams managing multiple initiatives. Schedule a 45-minute scope workshop to map the outcomes you’re chasing.</p>
+        <a class="btn btn--ghost" href="mailto:hello@VitoStudio.io">Talk with us</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="layout__container">
+      <div class="site-footer__top">
+        <p class="site-footer__brand">VitoStudio</p>
+        <div class="site-footer__links">
+          <a href="./blog.html">Insights</a>
+          <a href="./pricing.html">Pricing</a>
+          <a href="./signup.html">Create account</a>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <p>© <span data-js="year"></span> VitoStudio. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" data-js="payment-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal__dialog">
+      <div class="modal__header">
+        <h2 class="modal__title">Confirm your plan</h2>
+        <button class="modal__close" type="button" data-js="close-payment" aria-label="Close payment modal">
+          ✕
+        </button>
+      </div>
+      <form class="form" data-js="payment-form">
+        <p>Complete the details below and our team will send an onboarding guide within 24 hours.</p>
+        <div class="form__group">
+          <label class="form__label" for="plan">Selected plan</label>
+          <input class="form__field" id="plan" name="plan" type="text" readonly>
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="company">Company</label>
+          <input class="form__field" id="company" name="company" type="text" required>
+          <p class="form__error" data-js="error-company" hidden>Company name is required.</p>
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="email">Work email</label>
+          <input class="form__field" id="email" name="email" type="email" required>
+          <p class="form__error" data-js="error-email" hidden>Please enter a valid email address.</p>
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="notes">Notes (optional)</label>
+          <textarea class="form__field" id="notes" name="notes" rows="3"></textarea>
+        </div>
+        <button class="btn" type="submit">Submit request</button>
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="../js/app.js"></script>
+</body>
+
+</html>

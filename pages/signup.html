@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign up — VitoStudio</title>
+  <meta name="description" content="Create a VitoStudio account to collaborate on projects.">
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body data-page="signup">
+  <div class="auth-page">
+    <div class="auth-page__particles" id="auth-particles" aria-hidden="true"></div>
+    <main class="auth">
+      <div class="auth__card">
+        <div class="auth__heading">
+          <span class="type-subtitle">Client workspace</span>
+          <h1>Create your account</h1>
+          <p class="auth__meta">Join the VitoStudio workspace to access roadmaps, playbacks, and deliverables.</p>
+        </div>
+        <form class="form" data-js="auth-form">
+          <div class="form__group">
+            <label class="form__label" for="full-name">Full name</label>
+            <input class="form__field" id="full-name" name="full-name" type="text" autocomplete="name" required>
+            <p class="form__error" data-js="error-name" hidden>Your name is required.</p>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="company">Company</label>
+            <input class="form__field" id="company" name="company" type="text" autocomplete="organization" required>
+            <p class="form__error" data-js="error-company" hidden>Company name is required.</p>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="email">Work email</label>
+            <input class="form__field" id="email" name="email" type="email" autocomplete="email" required>
+            <p class="form__error" data-js="error-email" hidden>Enter a valid work email.</p>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="password">Password</label>
+            <input class="form__field" id="password" name="password" type="password" autocomplete="new-password"
+              required minlength="8">
+            <p class="form__error" data-js="error-password" hidden>Password must be at least 8 characters.</p>
+          </div>
+          <button class="btn" type="submit">Create account</button>
+        </form>
+        <p class="auth__actions">Already have an account? <a href="./signin.html">Sign in</a></p>
+      </div>
+    </main>
+  </div>
+
+  <script src="../node_modules/particles.js/particles.js"></script>
+  <script type="module" src="../js/app.js" data-page="signup"></script>
+</body>
+
+</html>

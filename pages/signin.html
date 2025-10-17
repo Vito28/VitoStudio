@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign in — VitoStudio</title>
+  <meta name="description" content="Access the VitoStudio client workspace.">
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body data-page="signin">
+  <div class="auth-page">
+    <div class="auth-page__particles" id="auth-particles" aria-hidden="true"></div>
+    <main class="auth">
+      <div class="auth__card">
+        <div class="auth__heading">
+          <span class="type-subtitle">Client workspace</span>
+          <h1>Sign in</h1>
+          <p class="auth__meta">Enter your account details to join ongoing projects and reviews.</p>
+        </div>
+        <form class="form" data-js="auth-form">
+          <div class="form__group">
+            <label class="form__label" for="email">Email</label>
+            <input class="form__field" id="email" name="email" type="email" autocomplete="email" required>
+            <p class="form__error" data-js="error-email" hidden>Enter a valid email address.</p>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="password">Password</label>
+            <input class="form__field" id="password" name="password" type="password" autocomplete="current-password"
+              required minlength="8">
+            <p class="form__error" data-js="error-password" hidden>Password must be at least 8 characters.</p>
+          </div>
+          <button class="btn" type="submit">Sign in</button>
+        </form>
+        <p class="auth__actions">New to VitoStudio? <a href="./signup.html">Create an account</a></p>
+      </div>
+    </main>
+  </div>
+
+
+  <script src="../node_modules/particles.js/particles.js"></script>
+  <script type="module" src="../js/app.js" data-page="signin"></script>
+</body>
+
+</html>
