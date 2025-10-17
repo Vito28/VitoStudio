@@ -1,0 +1,40 @@
+.site-footer {
+  padding-block: clamp(2.5rem, 5vw, 3.5rem);
+  background: linear-gradient(135deg, color-mix(in srgb, var(--color-surface) 70%, transparent), transparent);
+  border-top: 1px solid var(--color-border);
+
+  &__top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__brand {
+    font-weight: 600;
+    font-size: 1.125rem;
+  }
+
+  &__links {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  &__links a {
+    color: var(--color-muted);
+    transition: color 0.2s ease;
+
+    &:hover,
+    &:focus-visible {
+      color: var(--color-accent);
+    }
+  }
+
+  &__bottom {
+    margin-top: 2rem;
+    color: var(--color-muted);
+    font-size: 0.875rem;
+  }
+}

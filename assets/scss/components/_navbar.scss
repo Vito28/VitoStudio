@@ -1,0 +1,226 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding-block: 1rem;
+
+  &__brand {
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  &__nav {
+    margin-inline: auto;
+  }
+
+  &__menu {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item--theme {
+    display: block;
+  }
+
+  &__link {
+    color: var(--color-muted);
+    font-weight: 500;
+    transition: color 0.2s ease;
+    position: relative;
+
+    &:focus-visible {
+      outline: 2px solid var(--color-accent);
+      outline-offset: 4px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset-inline: 0;
+      bottom: -6px;
+      height: 2px;
+      transform: scaleX(0);
+      transform-origin: left;
+      background-color: var(--color-accent);
+      transition: transform 0.2s ease;
+    }
+
+    &:hover,
+    &:focus-visible {
+      color: var(--color-text);
+
+      &::after {
+        transform: scaleX(1);
+      }
+    }
+  }
+
+  &__link--active {
+    color: var(--color-text);
+
+    &::after {
+      transform: scaleX(1);
+    }
+  }
+
+  &__theme {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 999px;
+    padding: 0.5rem 1.1rem;
+    background-color: color-mix(in srgb, var(--color-surface) 85%, transparent);
+    border: 1px solid var(--color-border);
+    color: var(--color-text);
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+    font-weight: 600;
+
+    &:hover,
+    &:focus-visible {
+      background-color: color-mix(in srgb, var(--color-accent) 20%, var(--color-surface));
+      border-color: color-mix(in srgb, var(--color-accent) 35%, var(--color-border));
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--color-accent);
+      outline-offset: 4px;
+    }
+  }
+
+  &__hamburger {
+    display: none;
+    position: relative;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid var(--color-border);
+    background: none;
+    color: var(--color-text);
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+
+    &:hover,
+    &:focus-visible {
+      background-color: color-mix(in srgb, var(--color-accent) 15%, var(--color-surface));
+      border-color: color-mix(in srgb, var(--color-accent) 35%, var(--color-border));
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--color-accent);
+      outline-offset: 4px;
+    }
+  }
+
+  &__hamburger-line {
+    position: absolute;
+    left: 12px;
+    width: 20px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: currentColor;
+    transition: transform 0.25s ease, opacity 0.25s ease, top 0.25s ease;
+  }
+
+  &__hamburger-line:nth-of-type(1) {
+    top: 14px;
+  }
+
+  &__hamburger-line:nth-of-type(2) {
+    top: 21px;
+  }
+
+  &__hamburger-line:nth-of-type(3) {
+    top: 28px;
+  }
+
+  &__hamburger[aria-expanded="true"] .navbar__hamburger-line:nth-of-type(1) {
+    top: 21px;
+    transform: rotate(45deg);
+  }
+
+  &__hamburger[aria-expanded="true"] .navbar__hamburger-line:nth-of-type(2) {
+    opacity: 0;
+  }
+
+  &__hamburger[aria-expanded="true"] .navbar__hamburger-line:nth-of-type(3) {
+    top: 21px;
+    transform: rotate(-45deg);
+  }
+}
+
+.navbar__overlay {
+  position: fixed;
+  inset: 0;
+  background: color-mix(in srgb, var(--color-bg) 75%, transparent);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+  z-index: 45;
+}
+
+.navbar__overlay--visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+body.has-nav-open {
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    &__nav {
+      margin: 0;
+    }
+
+    &__menu {
+      position: fixed;
+      top: 72px;
+      left: 16px;
+      right: 16px;
+      bottom: 16px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1.75rem;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--color-border);
+      background-color: color-mix(in srgb, var(--color-surface) 95%, transparent);
+      box-shadow: 0 24px 48px rgba(0, 0, 0, 0.25);
+      transform: translateY(-12px);
+      opacity: 0;
+      pointer-events: none;
+      overflow-y: auto;
+      z-index: 55;
+    }
+
+    &__menu[aria-expanded="true"] {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+
+    &__hamburger {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__item--theme {
+      width: 100%;
+    }
+
+    &__theme {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  .navbar__menu > li + li {
+    margin-top: 0.75rem;
+  }
+}
