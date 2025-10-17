@@ -1,0 +1,9 @@
+:root[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+:root[data-theme="dark"] .card,
+:root[data-theme="dark"] .pricing__card,
+:root[data-theme="dark"] .timeline__item {
+  box-shadow: 0 28px 56px rgba(0, 0, 0, 0.35);
+}

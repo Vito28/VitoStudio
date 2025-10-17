@@ -1,0 +1,39 @@
+.blog-detail {
+  display: grid;
+  gap: 2rem;
+  max-width: 760px;
+  margin-inline: auto;
+
+  &__hero {
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+  }
+
+  &__hero img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+
+  &__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    color: var(--color-muted);
+    font-size: 0.9rem;
+  }
+
+  &__content {
+    display: grid;
+    gap: 1.5rem;
+    line-height: 1.8;
+    color: var(--color-muted);
+  }
+
+  &__share {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+}

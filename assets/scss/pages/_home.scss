@@ -1,0 +1,144 @@
+.hero {
+  display: grid;
+  gap: clamp(2rem, 5vw, 3rem);
+  align-items: center;
+
+  &__content {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  &__media {
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__media img {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+  }
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+
+  &__item {
+    display: grid;
+    gap: 0.25rem;
+    padding: 1.25rem;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border);
+    background-color: var(--color-surface);
+    text-align: center;
+  }
+
+  &__value {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 700;
+  }
+
+  &__label {
+    color: var(--color-muted);
+    font-size: 0.875rem;
+  }
+}
+
+.services {
+  &__media {
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__media img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;
+  }
+
+  &__grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+}
+
+.workflow {
+  display: grid;
+  gap: 1.25rem;
+
+  &__steps {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  &__step {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 1.25rem;
+    display: grid;
+    gap: 0.75rem;
+  }
+
+  &__badge {
+    font-weight: 600;
+    color: var(--color-accent);
+    font-size: 0.875rem;
+  }
+}
+
+.experience {
+  display: grid;
+  gap: 2rem;
+
+  &__counters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  &__counter {
+    min-width: 160px;
+    padding: 1.5rem;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border);
+    background-color: var(--color-surface);
+  }
+
+  &__value {
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    font-weight: 700;
+  }
+
+  &__label {
+    color: var(--color-muted);
+    font-size: 0.875rem;
+  }
+}
+
+.cta {
+  padding: clamp(2.5rem, 6vw, 3.5rem);
+  border-radius: var(--radius-md);
+  background:
+    linear-gradient(135deg, rgba(100, 255, 143, 0.1), transparent),
+    color-mix(in srgb, var(--color-surface) 96%, transparent);
+  border: 1px solid var(--color-border);
+  display: grid;
+  gap: 1.5rem;
+  justify-items: center;
+  text-align: center;
+}
