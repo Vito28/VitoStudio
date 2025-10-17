@@ -1,0 +1,43 @@
+@use "../abstracts/mixins" as mixins;
+@use "../abstracts/functions" as fns;
+
+body {
+  font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Playfair Display", "Times New Roman", serif;
+  color: var(--color-text);
+  line-height: 1.1;
+}
+
+h1 {
+  @include mixins.fluid-type(fns.rem(32px), fns.rem(56px));
+}
+
+h2 {
+  @include mixins.fluid-type(fns.rem(28px), fns.rem(44px));
+}
+
+h3 {
+  @include mixins.fluid-type(fns.rem(24px), fns.rem(32px));
+}
+
+p {
+  color: var(--color-muted);
+  max-width: 65ch;
+}
+
+.type-subtitle {
+  font-size: fns.rem(14px);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 600;
+  color: var(--color-accent);
+}
