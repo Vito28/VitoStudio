@@ -21,7 +21,7 @@ export async function initAuthParticles(page) {
 function getConfigPath(page) {
   switch (page) {
     case "signin":
-      return "../assets/particles/signin.json";
+      return "../../assets/particles/signin.json";
     case "signup":
       return "../assets/particles/signup.json";
     default:
