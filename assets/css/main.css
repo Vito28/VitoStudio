@@ -476,13 +476,14 @@ body.has-nav-open {
   box-shadow: 0 24px 48px rgba(0, 0, 0, 0.25);
 }
 .card__badge {
-  display: inline-flex;
+  display: inline-block;
+  justify-self: start;
   align-self: start;
   padding: 0.25rem 0.75rem;
   border-radius: 999px;
   background-color: color-mix(in srgb, var(--color-accent) 20%, var(--color-surface));
   color: var(--color-accent);
-  font-size: 0.8125rem;
+font-size: 0.8125rem;
   font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: uppercase;
