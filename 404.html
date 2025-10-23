@@ -16,319 +16,14 @@
     <meta name="twitter:title" content="404 — Page Not Found">
     <meta name="twitter:description" content="The page you requested could not be found on VitoStudio.">
     <link rel="canonical" href="https://vito28.github.io/VitoStudio/404.html">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
-        rel="stylesheet">
-    <meta name="color-scheme" content="light dark">
-    <style>
-        :root {
-            /* light theme */
-            --bg: #f7fbff;
-            --surface: #ffffff;
-            --text: #0b1220;
-            --muted: #556175;
-            --accent: #5b7cff;
-            --accent-2: #2ec4b6;
-            --glass: rgba(255, 255, 255, 0.6);
-            --border: rgba(11, 18, 32, 0.06);
-            --radius: 12px;
-            --shadow-1: 0 6px 20px rgba(11, 18, 32, 0.08);
-            --space-1: 8px;
-            --space-2: 12px;
-            --space-3: 20px;
-            --space-4: 32px;
-        }
-
-        [data-theme="dark"] {
-            --bg: #071029;
-            --surface: #071529;
-            --text: #e6eef8;
-            --muted: #9fb1c9;
-            --accent: #6ea8fe;
-            --accent-2: #2ad0ba;
-            --glass: rgba(12, 20, 32, 0.5);
-            --border: rgba(255, 255, 255, 0.04);
-            --shadow-1: 0 8px 28px rgba(2, 6, 23, 0.6);
-        }
-
-        * {
-            box-sizing: border-box
-        }
-
-        html,
-        body {
-            height: 100%
-        }
-
-        body {
-            margin: 0;
-            font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-            background: linear-gradient(180deg, var(--bg), color-mix(in srgb, var(--bg) 95%, var(--surface) 5%));
-            color: var(--text);
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 48px 20px;
-        }
-
-        .card {
-            width: 100%;
-            max-width: 980px;
-            background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
-            border-radius: 16px;
-            padding: 36px;
-            display: grid;
-            grid-template-columns: 1fr 420px;
-            gap: 28px;
-            align-items: center;
-            box-shadow: var(--shadow-1);
-            border: 1px solid var(--border);
-            backdrop-filter: blur(6px);
-        }
-
-        .left {
-            padding: 8px 4px;
-        }
-
-        .code {
-            font-family: "Playfair Display", Georgia, serif;
-            font-size: 7.5rem;
-            line-height: 0.9;
-            margin: 0;
-            background: linear-gradient(90deg, var(--accent), var(--accent-2));
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            text-shadow: 0 14px 40px rgba(59, 96, 200, 0.08);
-        }
-
-        .title {
-            font-size: 28px;
-            margin: 6px 0 0 0;
-            font-weight: 700;
-        }
-
-        .desc {
-            color: var(--muted);
-            margin-top: 14px;
-            font-size: 15px;
-            max-width: 58ch;
-        }
-
-        .actions {
-            display: flex;
-            gap: 12px;
-            margin-top: 18px;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .btn,
-        .btn-ghost {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            border: 0;
-            cursor: pointer;
-            padding: 10px 16px;
-            border-radius: 10px;
-            font-weight: 600;
-            text-decoration: none;
-            transition: transform .14s ease, box-shadow .14s ease;
-        }
-
-        .btn {
-            background: linear-gradient(90deg, var(--accent), var(--accent-2));
-            color: var(--surface);
-            box-shadow: 0 10px 30px rgba(46, 157, 199, 0.12);
-        }
-
-        .btn:hover {
-            transform: translateY(-4px)
-        }
-
-        .btn:active {
-            transform: translateY(-1px)
-        }
-
-        .btn-ghost {
-            background: transparent;
-            color: var(--text);
-            border: 1px solid var(--border);
-            padding: 9px 14px;
-        }
-
-        /* right illustration */
-        .art {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 18px;
-        }
-
-        .scene {
-            width: 360px;
-            height: 220px;
-            border-radius: 12px;
-            background: linear-gradient(180deg, color-mix(in srgb, var(--accent) 6%, transparent), transparent 55%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            overflow: hidden;
-            box-shadow: var(--shadow-1);
-            border: 1px solid var(--border);
-        }
-
-        .planet {
-            position: absolute;
-            right: 18px;
-            top: -30px;
-            width: 220px;
-            height: 220px;
-            border-radius: 999px;
-            background: radial-gradient(circle at 30% 30%, color-mix(in srgb, var(--accent) 36%, white 6%), color-mix(in srgb, var(--accent-2) 18%, #fff 2%));
-            filter: blur(6px);
-            opacity: .95;
-            transform: rotate(10deg)
-        }
-
-        .paper {
-            width: 210px;
-            height: 140px;
-            background: linear-gradient(180deg, var(--surface), color-mix(in srgb, var(--surface) 80%, black 2%));
-            border-radius: 10px;
-            padding: 18px;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;
-            gap: 8px;
-            transform: translateX(-8px);
-        }
-
-        .paper h4 {
-            margin: 0;
-            font-size: 18px
-        }
-
-        .paper p {
-            margin: 0;
-            color: var(--muted);
-            font-size: 13px
-        }
-
-        /* small animated dots */
-        .dot {
-            position: absolute;
-            width: 10px;
-            height: 10px;
-            border-radius: 999px;
-            background: var(--accent);
-            opacity: .18
-        }
-
-        .dot.a {
-            left: 22px;
-            top: 18px;
-            animation: float 6s linear infinite
-        }
-
-        .dot.b {
-            left: 62px;
-            top: 38px;
-            background: var(--accent-2);
-            animation: float 5s linear infinite
-        }
-
-        .dot.c {
-            left: 18px;
-            bottom: 26px;
-            animation: float 7s linear infinite
-        }
-
-        @keyframes float {
-            0% {
-                transform: translateY(0) rotate(0)
-            }
-
-            50% {
-                transform: translateY(-12px) rotate(6deg)
-            }
-
-            100% {
-                transform: translateY(0) rotate(0)
-            }
-        }
-
-        /* responsive */
-        @media (max-width:880px) {
-            .card {
-                grid-template-columns: 1fr;
-                padding: 24px
-            }
-
-            .scene {
-                width: 100%;
-                height: 180px
-            }
-
-            .code {
-                font-size: 6.5rem
-            }
-        }
-
-        @media (max-width:420px) {
-            .code {
-                font-size: 4.6rem
-            }
-
-            .paper {
-                width: 170px
-            }
-        }
-
-        /* theme toggle */
-        .theme-toggle {
-            position: fixed;
-            right: 18px;
-            top: 18px;
-            border-radius: 10px;
-            padding: 8px 10px;
-            background: var(--glass);
-            backdrop-filter: blur(6px);
-            border: 1px solid var(--border);
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            color: var(--text)
-        }
-
-        .sr-only {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border: 0
-        }
-    </style>
+    <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 
-<body>
-    <button class="theme-toggle" id="themeToggle" aria-pressed="false">
-        <span aria-hidden="true">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" data-theme-icon xmlns="http://www.w3.org/2000/svg">
+<body data-page="not-found">
+    <button class="not-found__toggle" id="themeToggle" aria-pressed="false">
+        <span class="not-found__toggle-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" data-theme-icon
+                xmlns="http://www.w3.org/2000/svg">
                 <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" stroke="currentColor" stroke-width="1.4"
                     stroke-linecap="round" stroke-linejoin="round" />
             </svg>
@@ -336,77 +31,34 @@
         <span class="sr-only" data-theme-text data-theme-dark="Dark mode" data-theme-light="Light mode">Dark mode</span>
     </button>
 
-    <main class="card" role="main" aria-labelledby="heading-404">
-        <section class="left">
-            <h1 class="code">404</h1>
-            <h2 id="heading-404" class="title">Page not found</h2>
-            <p class="desc">We can't find the page you're looking for. It may have been moved, renamed, or removed. Try
-                returning home or contact the site owner if you think this is an error.</p>
-
-            <div class="actions">
-                <a class="btn" href="/" aria-label="Return to homepage">Home</a>
+    <main class="not-found" role="main" aria-labelledby="heading-404">
+        <section class="not-found__content">
+            <span class="type-subtitle">Error</span>
+            <h1 class="not-found__code">404</h1>
+            <h2 id="heading-404" class="not-found__title">Page not found</h2>
+            <p class="not-found__description">We can't find the page you're looking for. It may have been moved,
+                renamed, or
+                removed. Try returning home or contact the site owner if you think this is an error.</p>
+            <div class="not-found__actions">
+                <a class="btn" href="/" aria-label="Return to homepage">Back to homepage</a>
             </div>
         </section>
 
-        <aside class="art" aria-hidden="true">
-            <div class="scene">
-                <div class="planet" aria-hidden="true"></div>
-                <div class="paper">
+        <aside class="not-found__art" aria-hidden="true">
+            <div class="not-found__scene">
+                <div class="not-found__planet"></div>
+                <div class="not-found__paper">
                     <h4>Lost document</h4>
                     <p>Request returned 404 — document not found</p>
                 </div>
-                <div class="dot a"></div>
-                <div class="dot b"></div>
-                <div class="dot c"></div>
+                <span class="not-found__dot not-found__dot--a"></span>
+                <span class="not-found__dot not-found__dot--b"></span>
+                <span class="not-found__dot not-found__dot--c"></span>
             </div>
         </aside>
     </main>
 
-    <script>
-        (function () {
-            const ICONS = {
-                light: '<path d="M12 3v2M17.66 6.34l-1.42 1.42M21 12h-2M17.66 17.66l-1.42-1.42M12 17v2M7.76 16.24l-1.42 1.42M5 12H3M7.76 7.76L6.34 6.34M12 8a4 4 0 100 8 4 4 0 000-8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />',
-                dark: '<path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />'
-            };
-
-            const root = document.documentElement;
-            const storedTheme = localStorage.getItem('theme');
-            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-            const initialTheme = storedTheme || (prefersDark ? 'dark' : 'light');
-            root.setAttribute('data-theme', initialTheme);
-
-            const btn = document.getElementById('themeToggle');
-            if (!btn) return;
-            const textNode = btn.querySelector('[data-theme-text]');
-            const iconNode = btn.querySelector('[data-theme-icon]');
-
-            function updateButton(theme) {
-                const isDark = theme === 'dark';
-                const srLabel = isDark ? 'Switch to light mode' : 'Switch to dark mode';
-                btn.setAttribute('aria-pressed', isDark ? 'true' : 'false');
-                btn.setAttribute('title', srLabel);
-                btn.setAttribute('aria-label', srLabel);
-
-                if (textNode) {
-                    textNode.textContent = isDark ? (textNode.dataset.themeLight || 'Light') : (textNode.dataset.themeDark || 'Dark');
-                }
-
-                if (iconNode) {
-                    iconNode.innerHTML = isDark ? ICONS.light : ICONS.dark;
-                }
-            }
-
-            btn.addEventListener('click', () => {
-                const current = root.getAttribute('data-theme') || 'light';
-                const next = current === 'dark' ? 'light' : 'dark';
-                root.setAttribute('data-theme', next);
-                localStorage.setItem('theme', next);
-                updateButton(next);
-            });
-
-            updateButton(initialTheme);
-        })();
-    </script>
+    <script type="module" src="./js/pages/404.js"></script>
 </body>
 
 </html>
