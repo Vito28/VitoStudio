@@ -5,13 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>VitoStudio — Digital Product Partner</title>
-  <meta name="description"
-    content="VitoStudio crafts digital experiences, helping teams launch products with clarity and momentum.">
+  <meta name="description" content="VitoStudio crafts digital experiences, helping teams launch products with clarity and momentum.">
   <meta property="og:title" content="VitoStudio — Digital Product Partner">
-  <meta property="og:description"
-    content="Discover our services, workflow, testimonials, and pricing for your next digital product.">
+  <meta property="og:description" content="Discover our services, workflow, testimonials, and pricing for your next digital product.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://vito28.github.io/VitoStudio/">
+  <meta property="og:site_name" content="VitoStudio">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="VitoStudio — Digital Product Partner">
+  <meta name="twitter:description" content="Discover our services, workflow, testimonials, and pricing for your next digital product.">
+  <link rel="canonical" href="https://vito28.github.io/VitoStudio/">
   <link rel="preload" as="style" href="./assets/css/main.css">
   <link rel="stylesheet" href="./assets/css/main.css">
   <link rel="icon" href="./assets/icons/favicon.svg" type="image/svg+xml">
@@ -23,15 +26,20 @@
       <a class="navbar__brand" href="/" aria-label="VitoStudio homepage">
         VitoStudio
       </a>
-      <nav class="navbar__nav">
+      <nav class="navbar__nav" aria-label="Primary navigation">
         <ul class="navbar__menu" id="main-menu" data-js="navbar-menu" aria-expanded="false">
-          <li><a class="navbar__link navbar__link--active" href="/">Home</a></li>
+          <li><a class="navbar__link navbar__link--active" href="/" aria-current="page">Home</a></li>
           <li><a class="navbar__link" href="./pages/blog.html">Insights</a></li>
           <li><a class="navbar__link" href="./pages/pricing.html">Pricing</a></li>
           <li><a class="navbar__link" href="./pages/blog-detail.html">Case Study</a></li>
           <li><a class="navbar__link" href="./pages/signin.html">Sign in</a></li>
           <li class="navbar__item navbar__item--theme">
-            <button class="navbar__theme" data-js="theme-toggle" type="button" aria-label="Toggle theme">Theme</button>
+            <button class="navbar__theme" data-js="theme-toggle" type="button">
+              <span class="navbar__theme-icon" aria-hidden="true">
+                <svg width="20" height="20" data-theme-icon></svg>
+              </span>
+              <span data-theme-text data-theme-dark="Dark mode" data-theme-light="Light mode">Dark mode</span>
+            </button>
           </li>
         </ul>
       </nav>
