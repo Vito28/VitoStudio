@@ -37,11 +37,20 @@ export function initNavbar() {
     overlay?.classList.toggle("navbar__overlay--visible", open);
 
     if (open) {
+      if (window.innerWidth <= 768) {
+        const headerRect = header.getBoundingClientRect();
+        const topOffset = Math.max(headerRect.bottom + 16, 16);
+        menu.style.top = `${topOffset}px`;
+      } else {
+        menu.style.removeProperty("top");
+      }
+
       lastFocusedElement =
         document.activeElement instanceof HTMLElement ? document.activeElement : null;
       const [firstFocusable] = getFocusable();
       window.setTimeout(() => firstFocusable?.focus(), 0);
     } else {
+      menu.style.removeProperty("top");
       lastFocusedElement?.focus?.();
     }
   };
