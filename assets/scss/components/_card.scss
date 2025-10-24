@@ -16,7 +16,8 @@
   }
 
   &__badge {
-    display: inline-flex;
+    display: inline-block;
+    justify-self: start;
     align-self: start;
     padding: 0.25rem 0.75rem;
     border-radius: 999px;

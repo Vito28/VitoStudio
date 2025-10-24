@@ -37,7 +37,8 @@ p {
 .type-subtitle {
   font-size: fns.rem(14px);
   text-transform: uppercase;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.15em;
   font-weight: 600;
   color: var(--color-accent);
+  margin-bottom: 0.5rem;
 }
