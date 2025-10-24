@@ -35,4 +35,25 @@
     color: #f87171;
     font-size: 0.875rem;
   }
+
+  &__message {
+    margin-top: -0.25rem;
+    padding: 0.85rem 1rem;
+    border-radius: var(--radius-md);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    border: 1px solid transparent;
+  }
+
+  &__message--error {
+    background-color: rgba(248, 113, 113, 0.12);
+    border-color: rgba(248, 113, 113, 0.35);
+    color: #b91c1c;
+  }
+
+  &__message--success {
+    background-color: color-mix(in srgb, var(--color-accent) 18%, transparent);
+    border-color: color-mix(in srgb, var(--color-accent) 40%, var(--color-border));
+    color: var(--color-text);
+  }
 }

@@ -1,3 +1,5 @@
+import { getUser, saveUser, setSession } from "./auth-storage.js";
+
 export function initForms() {
   const forms = document.querySelectorAll("[data-js='auth-form']");
 
@@ -34,10 +36,61 @@ export function initForms() {
         valid = valid && isValidPassword;
       }
 
-      if (valid) {
-        form.reset();
-        alert("Form submitted successfully. Welcome aboard!");
+      if (!valid) {
+        showMessage(form, "Please fix the highlighted fields.", true);
+        return;
       }
+
+      const authType = form.dataset.authType ?? "";
+      const email = (emailField?.value ?? "").trim().toLowerCase();
+      const password = (passwordField?.value ?? "").trim();
+      const name = (nameField?.value ?? "").trim();
+      const company = (companyField?.value ?? "").trim();
+
+      if (authType === "signup") {
+        const user = {
+          name,
+          company,
+          email,
+          password,
+        };
+
+        saveUser(user);
+        setSession({ name, company, email });
+        showMessage(form, "Account created! Redirecting to your dashboard…", false);
+        form.reset();
+        window.dispatchEvent(new CustomEvent("auth:updated"));
+        redirect(form);
+        return;
+      }
+
+      if (authType === "signin") {
+        const storedUser = getUser();
+
+        if (!storedUser || storedUser.email !== email) {
+          showMessage(form, "We couldn’t find an account with that email.", true);
+          return;
+        }
+
+        if (storedUser.password !== password) {
+          showMessage(form, "Incorrect password. Please try again.", true);
+          return;
+        }
+
+        setSession({
+          name: storedUser.name,
+          company: storedUser.company,
+          email: storedUser.email,
+        });
+        showMessage(form, "Welcome back! Taking you to your dashboard…", false);
+        form.reset();
+        window.dispatchEvent(new CustomEvent("auth:updated"));
+        redirect(form);
+        return;
+      }
+
+      showMessage(form, "Form submitted successfully.", false);
+      form.reset();
     });
   });
 }
@@ -53,4 +106,21 @@ function toggleError(field, selector, condition) {
     message.removeAttribute("hidden");
     field.classList.add("form__field--invalid");
   }
+}
+
+function showMessage(form, text, isError) {
+  const message = form.querySelector("[data-js='auth-message']");
+  if (!message) return;
+
+  message.textContent = text;
+  message.hidden = false;
+  message.classList.toggle("form__message--error", isError);
+  message.classList.toggle("form__message--success", !isError);
+}
+
+function redirect(form) {
+  const redirectTarget = form.dataset.redirect ?? "/";
+  window.setTimeout(() => {
+    window.location.href = redirectTarget;
+  }, 1200);
 }

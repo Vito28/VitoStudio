@@ -8,22 +8,46 @@
   <meta name="description" content="Browse VitoStudio articles covering discovery, design, and engineering for digital products.">
   <meta property="og:title" content="Insights — VitoStudio">
   <meta property="og:description" content="Articles about product discovery, UX design, experimentation, and engineering.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vito28.github.io/VitoStudio/pages/blog.html">
+  <meta property="og:site_name" content="VitoStudio">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Insights — VitoStudio">
+  <meta name="twitter:description" content="Articles about product discovery, UX design, experimentation, and engineering.">
+  <link rel="canonical" href="https://vito28.github.io/VitoStudio/pages/blog.html">
   <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
 </head>
 
 <body data-page="blog">
   <header class="site-header" data-js="site-header">
     <div class="layout__container navbar">
-      <a class="navbar__brand" href="./index.html">VitoStudio</a>
-      <nav class="navbar__nav">
+      <a class="navbar__brand" href="/" aria-label="VitoStudio homepage">VitoStudio</a>
+      <nav class="navbar__nav" aria-label="Primary navigation">
         <ul class="navbar__menu" id="main-menu" data-js="navbar-menu" aria-expanded="false">
-          <li><a class="navbar__link" href="./index.html">Home</a></li>
-          <li><a class="navbar__link navbar__link--active" href="./blog.html">Insights</a></li>
+          <li><a class="navbar__link" href="/">Home</a></li>
+          <li><a class="navbar__link navbar__link--active" href="./blog.html" aria-current="page">Insights</a></li>
           <li><a class="navbar__link" href="./pricing.html">Pricing</a></li>
           <li><a class="navbar__link" href="./blog-detail.html">Case Study</a></li>
-          <li><a class="navbar__link" href="./signin.html">Sign in</a></li>
           <li class="navbar__item navbar__item--theme">
-            <button class="navbar__theme" data-js="theme-toggle" type="button" aria-label="Toggle theme">Theme</button>
+            <button class="navbar__theme" data-js="theme-toggle" type="button">
+              <span class="navbar__theme-icon" aria-hidden="true">
+                <svg width="20" height="20" data-theme-icon></svg>
+              </span>
+              <span data-theme-text data-theme-dark="Dark mode" data-theme-light="Light mode">Dark mode</span>
+            </button>
+          </li>
+          <li class="navbar__item navbar__item--profile" data-js="navbar-profile">
+            <button class="navbar__profile" type="button" data-js="profile-toggle" aria-expanded="false">
+              <span class="navbar__profile-avatar" data-js="profile-initials" aria-hidden="true">GU</span>
+              <span class="navbar__profile-name" data-js="profile-name">Guest</span>
+              <svg class="navbar__profile-caret" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="navbar__profile-menu" data-js="profile-menu" aria-hidden="true">
+              <p class="navbar__profile-email" data-js="profile-email">You're browsing as guest.</p>
+            </div>
           </li>
         </ul>
       </nav>
