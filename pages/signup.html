@@ -17,6 +17,7 @@
   <meta name="twitter:description" content="Create a VitoStudio account to collaborate on projects.">
   <link rel="canonical" href="https://vito28.github.io/VitoStudio/pages/signup.html">
   <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
 </head>
 
 <body data-page="signup">
@@ -29,7 +30,7 @@
           <h1>Create your account</h1>
           <p class="auth__meta">Join the VitoStudio workspace to access roadmaps, playbacks, and deliverables.</p>
         </div>
-        <form class="form" data-js="auth-form">
+        <form class="form" data-js="auth-form" data-auth-type="signup" data-redirect="../index.html">
           <div class="form__group">
             <label class="form__label" for="full-name">Full name</label>
             <input class="form__field" id="full-name" name="full-name" type="text" autocomplete="name" required>
@@ -51,6 +52,7 @@
               required minlength="8">
             <p class="form__error" data-js="error-password" hidden>Password must be at least 8 characters.</p>
           </div>
+          <p class="form__message" data-js="auth-message" hidden></p>
           <button class="btn" type="submit">Create account</button>
         </form>
         <p class="auth__actions">Already have an account? <a href="./signin.html">Sign in</a></p>

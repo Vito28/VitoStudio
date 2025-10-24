@@ -16,6 +16,7 @@
   <meta name="twitter:description" content="Choose the perfect engagement to partner with VitoStudio.">
   <link rel="canonical" href="https://vito28.github.io/VitoStudio/pages/pricing.html">
   <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
 </head>
 
 <body data-page="pricing">
@@ -28,7 +29,6 @@
           <li><a class="navbar__link" href="./blog.html">Insights</a></li>
           <li><a class="navbar__link navbar__link--active" href="./pricing.html" aria-current="page">Pricing</a></li>
           <li><a class="navbar__link" href="./blog-detail.html">Case Study</a></li>
-          <li><a class="navbar__link" href="./signin.html">Sign in</a></li>
           <li class="navbar__item navbar__item--theme">
             <button class="navbar__theme" data-js="theme-toggle" type="button">
               <span class="navbar__theme-icon" aria-hidden="true">
@@ -36,6 +36,18 @@
               </span>
               <span data-theme-text data-theme-dark="Dark mode" data-theme-light="Light mode">Dark mode</span>
             </button>
+          </li>
+          <li class="navbar__item navbar__item--profile" data-js="navbar-profile">
+            <button class="navbar__profile" type="button" data-js="profile-toggle" aria-expanded="false">
+              <span class="navbar__profile-avatar" data-js="profile-initials" aria-hidden="true">GU</span>
+              <span class="navbar__profile-name" data-js="profile-name">Guest</span>
+              <svg class="navbar__profile-caret" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="navbar__profile-menu" data-js="profile-menu" aria-hidden="true">
+              <p class="navbar__profile-email" data-js="profile-email">You're browsing as guest.</p>
+            </div>
           </li>
         </ul>
       </nav>

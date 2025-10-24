@@ -5,16 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Case Study — Designing experiments that keep teams aligned</title>
-  <meta name="description" content="How VitoStudio runs discovery experiments that ship faster without sacrificing alignment.">
+  <meta name="description"
+    content="How VitoStudio runs discovery experiments that ship faster without sacrificing alignment.">
   <meta property="og:title" content="Case Study — Designing experiments that keep teams aligned">
-  <meta property="og:description" content="Learn how VitoStudio keeps discovery, design, and engineering teams aligned through experiments.">
+  <meta property="og:description"
+    content="Learn how VitoStudio keeps discovery, design, and engineering teams aligned through experiments.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://vito28.github.io/VitoStudio/pages/blog-detail.html">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Case Study — Designing experiments that keep teams aligned">
-  <meta name="twitter:description" content="Learn how VitoStudio keeps discovery, design, and engineering teams aligned through experiments.">
+  <meta name="twitter:description"
+    content="Learn how VitoStudio keeps discovery, design, and engineering teams aligned through experiments.">
   <link rel="canonical" href="https://vito28.github.io/VitoStudio/pages/blog-detail.html">
   <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
 </head>
 
 <body data-page="blog-detail">
@@ -26,8 +30,8 @@
           <li><a class="navbar__link" href="/">Home</a></li>
           <li><a class="navbar__link" href="./blog.html">Insights</a></li>
           <li><a class="navbar__link" href="./pricing.html">Pricing</a></li>
-          <li><a class="navbar__link navbar__link--active" href="./blog-detail.html" aria-current="page">Case Study</a></li>
-          <li><a class="navbar__link" href="./signin.html">Sign in</a></li>
+          <li><a class="navbar__link navbar__link--active" href="./blog-detail.html" aria-current="page">Case Study</a>
+          </li>
           <li class="navbar__item navbar__item--theme">
             <button class="navbar__theme" data-js="theme-toggle" type="button">
               <span class="navbar__theme-icon" aria-hidden="true">
@@ -36,9 +40,24 @@
               <span data-theme-text data-theme-dark="Dark mode" data-theme-light="Light mode">Dark mode</span>
             </button>
           </li>
+          <li class="navbar__item navbar__item--profile" data-js="navbar-profile">
+            <button class="navbar__profile" type="button" data-js="profile-toggle" aria-expanded="false">
+              <span class="navbar__profile-avatar" data-js="profile-initials" aria-hidden="true">GU</span>
+              <span class="navbar__profile-name" data-js="profile-name">Guest</span>
+              <svg class="navbar__profile-caret" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"
+                focusable="false">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="navbar__profile-menu" data-js="profile-menu" aria-hidden="true">
+              <p class="navbar__profile-email" data-js="profile-email">You're browsing as guest.</p>
+            </div>
+          </li>
         </ul>
       </nav>
-      <button class="navbar__hamburger" data-js="navbar-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Toggle navigation">
+      <button class="navbar__hamburger" data-js="navbar-toggle" aria-expanded="false" aria-controls="main-menu"
+        aria-label="Toggle navigation">
         <span class="navbar__hamburger-line"></span>
         <span class="navbar__hamburger-line"></span>
         <span class="navbar__hamburger-line"></span>
@@ -62,26 +81,39 @@
       <div class="blog-detail__hero" data-slot="blog-detail-hero"></div>
 
       <div class="blog-detail__content">
-        <p>Teams often agree on the destination but disagree on the first step. Our discovery experiments act as a lightweight contract—allowing every contributor to understand the goal, the signals to validate, and the timeline to decide the next move.</p>
+        <p>Teams often agree on the destination but disagree on the first step. Our discovery experiments act as a
+          lightweight contract—allowing every contributor to understand the goal, the signals to validate, and the
+          timeline to decide the next move.</p>
 
         <h2>Start with a shared learning objective</h2>
-        <p>We begin every sprint with a learning statement: a concise sentence that states what we believe, why it matters, and how customers will tell us we're wrong. This creates traceability from stakeholder intent to customer evidence.</p>
+        <p>We begin every sprint with a learning statement: a concise sentence that states what we believe, why it
+          matters, and how customers will tell us we're wrong. This creates traceability from stakeholder intent to
+          customer evidence.</p>
 
         <h2>Prototype for conversations, not consensus</h2>
-        <p>Artifacts are built to reveal tension. Our designers co-create with product and engineering, simplifying experiments to the riskiest assumption. When everyone sees their ideas tested, collaboration becomes continuous rather than staged.</p>
+        <p>Artifacts are built to reveal tension. Our designers co-create with product and engineering, simplifying
+          experiments to the riskiest assumption. When everyone sees their ideas tested, collaboration becomes
+          continuous rather than staged.</p>
 
         <h2>Measure what enables the next decision</h2>
-        <p>Success metrics are tied to behavior change and operational impact. Each experiment ends with a playback: what we tried, what we observed, and the recommendation for the next iteration.</p>
+        <p>Success metrics are tied to behavior change and operational impact. Each experiment ends with a playback:
+          what we tried, what we observed, and the recommendation for the next iteration.</p>
 
-        <blockquote>“We value experiments that unblock a decision. The insight is useful only when it empowers the team to move forward with confidence.”</blockquote>
+        <blockquote>“We value experiments that unblock a decision. The insight is useful only when it empowers the team
+          to move forward with confidence.”</blockquote>
 
-        <p>For LumaPay we used this approach to refactor onboarding. Within two experiments the team validated the new ledger model, accelerating engineering by three weeks.</p>
+        <p>For LumaPay we used this approach to refactor onboarding. Within two experiments the team validated the new
+          ledger model, accelerating engineering by three weeks.</p>
       </div>
 
       <footer class="blog-detail__share">
         <span>Share</span>
-        <a class="navbar__link" href="https://twitter.com/intent/tweet?text=Designing%20experiments%20that%20keep%20teams%20aligned&url=https%3A%2F%2Fvito28.github.io%2FVitoStudio%2Fpages%2Fblog-detail.html" target="_blank" rel="nofollow noopener">Twitter</a>
-        <a class="navbar__link" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fvito28.github.io%2FVitoStudio%2Fpages%2Fblog-detail.html" target="_blank" rel="nofollow noopener">LinkedIn</a>
+        <a class="navbar__link"
+          href="https://twitter.com/intent/tweet?text=Designing%20experiments%20that%20keep%20teams%20aligned&url=https%3A%2F%2Fvito28.github.io%2FVitoStudio%2Fpages%2Fblog-detail.html"
+          target="_blank" rel="nofollow noopener">Twitter</a>
+        <a class="navbar__link"
+          href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fvito28.github.io%2FVitoStudio%2Fpages%2Fblog-detail.html"
+          target="_blank" rel="nofollow noopener">LinkedIn</a>
       </footer>
     </article>
   </main>
