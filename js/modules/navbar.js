@@ -48,7 +48,7 @@ export function initNavbar() {
     if (!profileMenu) return null;
     if (!profileSignin) {
       const button = document.createElement("a");
-      button.href = "/pages/signin.html";
+      button.href = "./pages/signin.html";
       button.className = "navbar__profile-action";
       button.dataset.js = "profile-signin";
       button.textContent = "Sign in";
